@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+dist/
+.test-work/
+.zzzystack/runtime/
+
+.venv/
+/build/
+*.egg-info/
+
+node_modules/
+*.tgz

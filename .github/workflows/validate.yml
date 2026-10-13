@@ -1,0 +1,34 @@
+name: Validate harness
+on:
+  push:
+  pull_request:
+jobs:
+  validate:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        node: [22, 24]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - run: npm run validate
+      - name: Pack and install in an isolated prefix
+        shell: bash
+        run: |
+          mkdir -p .test-work/npm
+          npm pack --pack-destination .test-work/npm
+          npm install --global --prefix "$PWD/.test-work/installed" --ignore-scripts --no-audit --no-fund .test-work/npm/zzzystack-*.tgz
+      - name: Verify installed resources and command
+        shell: bash
+        run: |
+          if [ "$RUNNER_OS" = "Windows" ]; then
+            CLI="$PWD/.test-work/installed/node_modules/zzzystack/setup/cli.js"
+            "$PWD/.test-work/installed/setup.cmd" validate
+          else
+            CLI="$PWD/.test-work/installed/lib/node_modules/zzzystack/setup/cli.js"
+            "$PWD/.test-work/installed/bin/setup" validate
+          fi
+          node .github/verify.mjs "$CLI"
