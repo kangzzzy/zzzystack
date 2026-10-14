@@ -1,0 +1,2946 @@
+{
+  "schemaVersion": 1,
+  "skills": {
+    "i-have-adhd": {
+      "path": "skills/i-have-adhd",
+      "status": "development",
+      "fingerprint": "0c8ff9d4cd8119676da090f6198b15021189bd9958ae19056fb07f0718391594",
+      "cases": [
+        {
+          "id": "direct-answer",
+          "prompt": "git status는 무엇을 보여줘? 한국어로 짧게 알려줘.",
+          "criteria": [
+            "첫 문장에서 작업 트리와 스테이징 상태를 정확히 설명한다.",
+            "불필요한 인사, 비유, 추가 숙제를 붙이지 않는다."
+          ],
+          "checks": [
+            {
+              "type": "response-includes",
+              "value": "git status"
+            }
+          ]
+        },
+        {
+          "id": "bounded-steps",
+          "prompt": "새 폴더에서 Git 저장소를 만들고 README.md를 첫 커밋하는 순서를 알려줘. 직접 실행하지 말고 내가 실행할 명령을 순서대로 알려줘.",
+          "criteria": [
+            "폴더 생성 및 이동, git init, README 생성, git add, git commit 순서를 정확히 안내한다.",
+            "여러 단계는 번호를 붙이고 각 단계는 작은 실행 단위로 나눈다.",
+            "실제로 실행했다고 주장하지 않는다."
+          ],
+          "checks": [
+            {
+              "type": "response-includes",
+              "value": "git init"
+            },
+            {
+              "type": "response-includes",
+              "value": "git commit"
+            }
+          ]
+        },
+        {
+          "id": "uncertain-error",
+          "prompt": "인증 요청이 실패했어. 로그와 상태 코드는 아직 없어. 원인이 뭔지 알려줘.",
+          "criteria": [
+            "근거 없이 원인을 확정하지 않는다.",
+            "다음 진단에 필요한 구체적인 정보 하나를 요청한다.",
+            "오류에 대해 비난하거나 장황한 가능성 목록을 나열하지 않는다."
+          ]
+        }
+      ],
+      "history": [],
+      "lastEvaluation": null
+    },
+    "requirements": {
+      "path": "skills/requirements",
+      "status": "development",
+      "fingerprint": "b24a3ceddb3e31598debe14c77c8074904d80bf2350c9daebee779091c8857d6",
+      "cases": [],
+      "history": [
+        {
+          "at": "2026-10-14T02:18:29.418Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "177a5813d6fd58e2ec1b03d2ba1552a2c190577fd694229d3b7d8950a1e2d089"
+        },
+        {
+          "at": "2026-10-14T02:45:12.137Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "430d6b30b8f6cc032c5a7abfc7853261f6b9045813e7c5fbf186320b2f47c40c"
+        },
+        {
+          "at": "2026-10-14T04:28:04.054Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "9f8a395258808bc2f3d11f39a13633d99484e0077fbe7951968d58499b039786"
+        },
+        {
+          "at": "2026-10-14T04:38:54.038Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "a6615181cc49e0b5ad46b45071c783ffed3a6f1a1b1dd326020ed43a18b97ec7"
+        },
+        {
+          "at": "2026-10-14T04:56:26.987Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c708aa04d5d5582c96d9251a1539673ad36f23301d3cefc9442003496d2b10b1"
+        },
+        {
+          "at": "2026-10-14T05:02:17.135Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "cc3812ac334bf4e2130bfc79d3cb51edca0fe9e5a84221ffe9c785c32d37e7c6"
+        },
+        {
+          "at": "2026-10-14T05:05:14.018Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "ebf4b6c8c17d70b348c7849ebb7e85f12e146b0b0436c11d954db38a22d1c6da"
+        },
+        {
+          "at": "2026-10-14T05:27:51.028Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1f465155df3d3b32fbf3793eaab0284d05c952145ad727a34422c93fb752c46c"
+        },
+        {
+          "at": "2026-10-14T05:36:10.263Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "3b62210d91b99aecfaf1ca86a51c7cb6a3315aed6a6aa4fb9019a2ed3fe5454d"
+        },
+        {
+          "at": "2026-10-14T05:46:50.221Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "962a30a84b797744e08cbd5caf64ad0d9e3416a7be727220a5e92ee0e2924dab"
+        },
+        {
+          "at": "2026-10-14T05:48:06.255Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8cec32afd5da24de53a6f0a40968f5ef7126e2aa5875d51c0e96ef90b08c173d"
+        },
+        {
+          "at": "2026-10-14T05:48:14.470Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "6b2b5b2b15dc1cd6d5b56bc445751c2f8333b9b74b6e393ee478db5ced600aef"
+        },
+        {
+          "at": "2026-10-14T05:49:14.912Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "dfc925f5578d5b47880d4aad05dbd31141a2a5ef9537199ede45860fe533f592"
+        },
+        {
+          "at": "2026-10-14T05:49:53.552Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1e04aba37004057d8cec0f19ce49f3ffc1a5748961a1b113d4fa13fbaa234db8"
+        },
+        {
+          "at": "2026-10-14T05:52:39.530Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "517995762ea634d42b2a2e79991a69048fa46053ea31687592683070c5819e31"
+        },
+        {
+          "at": "2026-10-14T05:53:09.189Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "f3da2ee70666103efc2be1f159d6d6ae9be0b37b0050a08dd20f91753ede7a3a"
+        },
+        {
+          "at": "2026-10-14T06:03:03.077Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "742748b9e51c815d043c3ddb2d7b1137e358a2a1b2c458592f50365f6f4060a8"
+        },
+        {
+          "at": "2026-10-14T06:07:18.435Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8b99ae421949511cf4eaea37b5f7f89d9cbdd847f29653e81578dc863b3e4195"
+        },
+        {
+          "at": "2026-10-14T06:19:57.021Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "4c5d62e2329dc7d39867ee59834eeee82a95fdba31e6cb6fc98cb66e912e0689"
+        },
+        {
+          "at": "2026-10-14T06:22:01.965Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "261d1bd6efc3d502ad31a1da81d45659e8d154e9687a078bcfe05dc33bf4509e"
+        },
+        {
+          "at": "2026-10-14T06:37:02.250Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c4def401709c6f65eca0b568f2c7248a1d7fd7a8b6aa18aaa1846ec644bb309e"
+        },
+        {
+          "at": "2026-10-14T07:09:55.389Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "31a5de274c9c0badd4e53bd3df921876b6e3dde665b449b0d3275d7cb7506203"
+        },
+        {
+          "at": "2026-10-14T07:42:37.908Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1200294a0bba814a8f7e88790aa914eeaf13e9aafd53966fa392f3c2221e81df"
+        },
+        {
+          "at": "2026-10-14T07:50:41.877Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "23a3e4b6083420299b328f3bba2fdfd6359864afde99cc21f602e71215fbbfd9"
+        },
+        {
+          "at": "2026-10-14T08:09:01.239Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "5edd1a416c1b93a0e05115a716c322e3bf719de2d36b96c1df18c36f286d1727"
+        }
+      ],
+      "lastEvaluation": null
+    },
+    "verify-design": {
+      "path": "evals/verify-design",
+      "status": "development",
+      "fingerprint": "b24a3ceddb3e31598debe14c77c8074904d80bf2350c9daebee779091c8857d6",
+      "cases": [],
+      "history": [
+        {
+          "at": "2026-10-14T02:18:28.704Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "177a5813d6fd58e2ec1b03d2ba1552a2c190577fd694229d3b7d8950a1e2d089"
+        },
+        {
+          "at": "2026-10-14T02:45:11.315Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "430d6b30b8f6cc032c5a7abfc7853261f6b9045813e7c5fbf186320b2f47c40c"
+        },
+        {
+          "at": "2026-10-14T04:28:03.255Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "9f8a395258808bc2f3d11f39a13633d99484e0077fbe7951968d58499b039786"
+        },
+        {
+          "at": "2026-10-14T04:38:53.282Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "a6615181cc49e0b5ad46b45071c783ffed3a6f1a1b1dd326020ed43a18b97ec7"
+        },
+        {
+          "at": "2026-10-14T04:56:26.029Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c708aa04d5d5582c96d9251a1539673ad36f23301d3cefc9442003496d2b10b1"
+        },
+        {
+          "at": "2026-10-14T05:02:16.359Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "cc3812ac334bf4e2130bfc79d3cb51edca0fe9e5a84221ffe9c785c32d37e7c6"
+        },
+        {
+          "at": "2026-10-14T05:05:13.267Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "ebf4b6c8c17d70b348c7849ebb7e85f12e146b0b0436c11d954db38a22d1c6da"
+        },
+        {
+          "at": "2026-10-14T05:27:50.190Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1f465155df3d3b32fbf3793eaab0284d05c952145ad727a34422c93fb752c46c"
+        },
+        {
+          "at": "2026-10-14T05:36:09.052Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "3b62210d91b99aecfaf1ca86a51c7cb6a3315aed6a6aa4fb9019a2ed3fe5454d"
+        },
+        {
+          "at": "2026-10-14T05:46:48.890Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "962a30a84b797744e08cbd5caf64ad0d9e3416a7be727220a5e92ee0e2924dab"
+        },
+        {
+          "at": "2026-10-14T05:48:04.641Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8cec32afd5da24de53a6f0a40968f5ef7126e2aa5875d51c0e96ef90b08c173d"
+        },
+        {
+          "at": "2026-10-14T05:48:13.087Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "6b2b5b2b15dc1cd6d5b56bc445751c2f8333b9b74b6e393ee478db5ced600aef"
+        },
+        {
+          "at": "2026-10-14T05:49:13.455Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "dfc925f5578d5b47880d4aad05dbd31141a2a5ef9537199ede45860fe533f592"
+        },
+        {
+          "at": "2026-10-14T05:49:51.623Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1e04aba37004057d8cec0f19ce49f3ffc1a5748961a1b113d4fa13fbaa234db8"
+        },
+        {
+          "at": "2026-10-14T05:52:37.471Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "517995762ea634d42b2a2e79991a69048fa46053ea31687592683070c5819e31"
+        },
+        {
+          "at": "2026-10-14T05:53:07.557Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "f3da2ee70666103efc2be1f159d6d6ae9be0b37b0050a08dd20f91753ede7a3a"
+        },
+        {
+          "at": "2026-10-14T06:03:01.153Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "742748b9e51c815d043c3ddb2d7b1137e358a2a1b2c458592f50365f6f4060a8"
+        },
+        {
+          "at": "2026-10-14T06:07:09.465Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8b99ae421949511cf4eaea37b5f7f89d9cbdd847f29653e81578dc863b3e4195"
+        },
+        {
+          "at": "2026-10-14T06:19:55.800Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "4c5d62e2329dc7d39867ee59834eeee82a95fdba31e6cb6fc98cb66e912e0689"
+        },
+        {
+          "at": "2026-10-14T06:22:00.091Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "261d1bd6efc3d502ad31a1da81d45659e8d154e9687a078bcfe05dc33bf4509e"
+        },
+        {
+          "at": "2026-10-14T06:37:00.725Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c4def401709c6f65eca0b568f2c7248a1d7fd7a8b6aa18aaa1846ec644bb309e"
+        },
+        {
+          "at": "2026-10-14T07:09:52.702Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "31a5de274c9c0badd4e53bd3df921876b6e3dde665b449b0d3275d7cb7506203"
+        },
+        {
+          "at": "2026-10-14T07:42:36.603Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1200294a0bba814a8f7e88790aa914eeaf13e9aafd53966fa392f3c2221e81df"
+        },
+        {
+          "at": "2026-10-14T07:50:40.533Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "23a3e4b6083420299b328f3bba2fdfd6359864afde99cc21f602e71215fbbfd9"
+        },
+        {
+          "at": "2026-10-14T08:08:58.912Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "5edd1a416c1b93a0e05115a716c322e3bf719de2d36b96c1df18c36f286d1727"
+        },
+        {
+          "at": "2026-10-14T08:19:53.479Z",
+          "status": "development",
+          "reason": "Moved unverified skill to evals",
+          "previousName": "design",
+          "previousPath": "skills/design"
+        }
+      ],
+      "lastEvaluation": null
+    },
+    "verify-documentation": {
+      "path": "evals/verify-documentation",
+      "status": "development",
+      "fingerprint": "6f2c402889387a6ebd2385067e479961ab57a1997ab595d44ff13613d298ea77",
+      "cases": [],
+      "history": [
+        {
+          "at": "2026-10-14T08:19:53.481Z",
+          "status": "development",
+          "reason": "Moved unverified skill to evals",
+          "previousName": "documentation",
+          "previousPath": "skills/documentation"
+        }
+      ],
+      "lastEvaluation": null
+    },
+    "verify-feature-map": {
+      "path": "evals/verify-feature-map",
+      "status": "development",
+      "cases": [],
+      "history": [
+        {
+          "at": "2026-10-14T05:48:04.911Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8cec32afd5da24de53a6f0a40968f5ef7126e2aa5875d51c0e96ef90b08c173d"
+        },
+        {
+          "at": "2026-10-14T05:48:13.271Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "6b2b5b2b15dc1cd6d5b56bc445751c2f8333b9b74b6e393ee478db5ced600aef"
+        },
+        {
+          "at": "2026-10-14T05:49:13.646Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "dfc925f5578d5b47880d4aad05dbd31141a2a5ef9537199ede45860fe533f592"
+        },
+        {
+          "at": "2026-10-14T05:49:51.937Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1e04aba37004057d8cec0f19ce49f3ffc1a5748961a1b113d4fa13fbaa234db8"
+        },
+        {
+          "at": "2026-10-14T05:52:37.805Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "517995762ea634d42b2a2e79991a69048fa46053ea31687592683070c5819e31"
+        },
+        {
+          "at": "2026-10-14T05:53:07.864Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "f3da2ee70666103efc2be1f159d6d6ae9be0b37b0050a08dd20f91753ede7a3a"
+        },
+        {
+          "at": "2026-10-14T06:03:01.347Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "742748b9e51c815d043c3ddb2d7b1137e358a2a1b2c458592f50365f6f4060a8"
+        },
+        {
+          "at": "2026-10-14T06:07:10.408Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8b99ae421949511cf4eaea37b5f7f89d9cbdd847f29653e81578dc863b3e4195"
+        },
+        {
+          "at": "2026-10-14T06:19:55.947Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "4c5d62e2329dc7d39867ee59834eeee82a95fdba31e6cb6fc98cb66e912e0689"
+        },
+        {
+          "at": "2026-10-14T06:22:00.373Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "261d1bd6efc3d502ad31a1da81d45659e8d154e9687a078bcfe05dc33bf4509e"
+        },
+        {
+          "at": "2026-10-14T06:37:00.890Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c4def401709c6f65eca0b568f2c7248a1d7fd7a8b6aa18aaa1846ec644bb309e"
+        },
+        {
+          "at": "2026-10-14T07:09:53.142Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "31a5de274c9c0badd4e53bd3df921876b6e3dde665b449b0d3275d7cb7506203"
+        },
+        {
+          "at": "2026-10-14T07:42:36.741Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1200294a0bba814a8f7e88790aa914eeaf13e9aafd53966fa392f3c2221e81df"
+        },
+        {
+          "at": "2026-10-14T07:50:40.678Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "23a3e4b6083420299b328f3bba2fdfd6359864afde99cc21f602e71215fbbfd9"
+        },
+        {
+          "at": "2026-10-14T08:08:59.082Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "5edd1a416c1b93a0e05115a716c322e3bf719de2d36b96c1df18c36f286d1727"
+        },
+        {
+          "at": "2026-10-14T08:19:53.481Z",
+          "status": "development",
+          "reason": "Moved unverified skill to evals",
+          "previousName": "feature-map",
+          "previousPath": "skills/feature-map"
+        }
+      ],
+      "lastEvaluation": null,
+      "fingerprint": "b24a3ceddb3e31598debe14c77c8074904d80bf2350c9daebee779091c8857d6"
+    },
+    "verify-docs": {
+      "path": "evals/verify-docs",
+      "status": "development",
+      "cases": [],
+      "history": [
+        {
+          "at": "2026-10-14T08:19:53.481Z",
+          "status": "development",
+          "reason": "Moved unverified skill to evals",
+          "previousName": "docs",
+          "previousPath": "skills/github/docs"
+        }
+      ],
+      "lastEvaluation": null,
+      "fingerprint": "0a4075addae5ac21be5a6fceded06a359b6cdf61412ac35083c1f1753635b6eb"
+    },
+    "verify-progress": {
+      "path": "evals/verify-progress",
+      "status": "development",
+      "fingerprint": "064786491b8b1331acbdd875b5e7e532125136ee4be20c121c34e26f498381eb",
+      "cases": [],
+      "history": [
+        {
+          "at": "2026-10-14T08:19:53.481Z",
+          "status": "development",
+          "reason": "Moved unverified skill to evals",
+          "previousName": "progress",
+          "previousPath": "skills/github/progress"
+        }
+      ],
+      "lastEvaluation": null
+    },
+    "verify-readme-base": {
+      "path": "evals/verify-readme-base",
+      "status": "development",
+      "cases": [],
+      "history": [
+        {
+          "at": "2026-10-14T08:19:53.481Z",
+          "status": "development",
+          "reason": "Moved unverified skill to evals",
+          "previousName": "readme",
+          "previousPath": "skills/github/readme"
+        }
+      ],
+      "lastEvaluation": null,
+      "fingerprint": "0a4075addae5ac21be5a6fceded06a359b6cdf61412ac35083c1f1753635b6eb"
+    },
+    "verify-review": {
+      "path": "evals/verify-review",
+      "status": "development",
+      "fingerprint": "b24a3ceddb3e31598debe14c77c8074904d80bf2350c9daebee779091c8857d6",
+      "cases": [],
+      "history": [
+        {
+          "at": "2026-10-14T02:18:28.827Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "177a5813d6fd58e2ec1b03d2ba1552a2c190577fd694229d3b7d8950a1e2d089"
+        },
+        {
+          "at": "2026-10-14T02:45:11.459Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "430d6b30b8f6cc032c5a7abfc7853261f6b9045813e7c5fbf186320b2f47c40c"
+        },
+        {
+          "at": "2026-10-14T04:28:03.402Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "9f8a395258808bc2f3d11f39a13633d99484e0077fbe7951968d58499b039786"
+        },
+        {
+          "at": "2026-10-14T04:38:53.414Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "a6615181cc49e0b5ad46b45071c783ffed3a6f1a1b1dd326020ed43a18b97ec7"
+        },
+        {
+          "at": "2026-10-14T04:56:26.204Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c708aa04d5d5582c96d9251a1539673ad36f23301d3cefc9442003496d2b10b1"
+        },
+        {
+          "at": "2026-10-14T05:02:16.506Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "cc3812ac334bf4e2130bfc79d3cb51edca0fe9e5a84221ffe9c785c32d37e7c6"
+        },
+        {
+          "at": "2026-10-14T05:05:13.399Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "ebf4b6c8c17d70b348c7849ebb7e85f12e146b0b0436c11d954db38a22d1c6da"
+        },
+        {
+          "at": "2026-10-14T05:27:50.345Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1f465155df3d3b32fbf3793eaab0284d05c952145ad727a34422c93fb752c46c"
+        },
+        {
+          "at": "2026-10-14T05:36:09.267Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "3b62210d91b99aecfaf1ca86a51c7cb6a3315aed6a6aa4fb9019a2ed3fe5454d"
+        },
+        {
+          "at": "2026-10-14T05:46:49.175Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "962a30a84b797744e08cbd5caf64ad0d9e3416a7be727220a5e92ee0e2924dab"
+        },
+        {
+          "at": "2026-10-14T05:48:05.156Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8cec32afd5da24de53a6f0a40968f5ef7126e2aa5875d51c0e96ef90b08c173d"
+        },
+        {
+          "at": "2026-10-14T05:48:13.438Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "6b2b5b2b15dc1cd6d5b56bc445751c2f8333b9b74b6e393ee478db5ced600aef"
+        },
+        {
+          "at": "2026-10-14T05:49:13.807Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "dfc925f5578d5b47880d4aad05dbd31141a2a5ef9537199ede45860fe533f592"
+        },
+        {
+          "at": "2026-10-14T05:49:52.242Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1e04aba37004057d8cec0f19ce49f3ffc1a5748961a1b113d4fa13fbaa234db8"
+        },
+        {
+          "at": "2026-10-14T05:52:38.113Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "517995762ea634d42b2a2e79991a69048fa46053ea31687592683070c5819e31"
+        },
+        {
+          "at": "2026-10-14T05:53:08.092Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "f3da2ee70666103efc2be1f159d6d6ae9be0b37b0050a08dd20f91753ede7a3a"
+        },
+        {
+          "at": "2026-10-14T06:03:01.547Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "742748b9e51c815d043c3ddb2d7b1137e358a2a1b2c458592f50365f6f4060a8"
+        },
+        {
+          "at": "2026-10-14T06:07:11.530Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8b99ae421949511cf4eaea37b5f7f89d9cbdd847f29653e81578dc863b3e4195"
+        },
+        {
+          "at": "2026-10-14T06:19:56.088Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "4c5d62e2329dc7d39867ee59834eeee82a95fdba31e6cb6fc98cb66e912e0689"
+        },
+        {
+          "at": "2026-10-14T06:22:00.685Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "261d1bd6efc3d502ad31a1da81d45659e8d154e9687a078bcfe05dc33bf4509e"
+        },
+        {
+          "at": "2026-10-14T06:37:01.080Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c4def401709c6f65eca0b568f2c7248a1d7fd7a8b6aa18aaa1846ec644bb309e"
+        },
+        {
+          "at": "2026-10-14T07:09:53.532Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "31a5de274c9c0badd4e53bd3df921876b6e3dde665b449b0d3275d7cb7506203"
+        },
+        {
+          "at": "2026-10-14T07:42:36.993Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1200294a0bba814a8f7e88790aa914eeaf13e9aafd53966fa392f3c2221e81df"
+        },
+        {
+          "at": "2026-10-14T07:50:40.937Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "23a3e4b6083420299b328f3bba2fdfd6359864afde99cc21f602e71215fbbfd9"
+        },
+        {
+          "at": "2026-10-14T08:08:59.398Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "5edd1a416c1b93a0e05115a716c322e3bf719de2d36b96c1df18c36f286d1727"
+        },
+        {
+          "at": "2026-10-14T08:19:53.481Z",
+          "status": "development",
+          "reason": "Moved unverified skill to evals",
+          "previousName": "review",
+          "previousPath": "skills/github/review"
+        }
+      ],
+      "lastEvaluation": null
+    },
+    "verify-ship": {
+      "path": "evals/verify-ship",
+      "status": "development",
+      "fingerprint": "b24a3ceddb3e31598debe14c77c8074904d80bf2350c9daebee779091c8857d6",
+      "cases": [],
+      "history": [
+        {
+          "at": "2026-10-14T02:18:28.871Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "177a5813d6fd58e2ec1b03d2ba1552a2c190577fd694229d3b7d8950a1e2d089"
+        },
+        {
+          "at": "2026-10-14T02:45:11.503Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "430d6b30b8f6cc032c5a7abfc7853261f6b9045813e7c5fbf186320b2f47c40c"
+        },
+        {
+          "at": "2026-10-14T04:28:03.450Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "9f8a395258808bc2f3d11f39a13633d99484e0077fbe7951968d58499b039786"
+        },
+        {
+          "at": "2026-10-14T04:38:53.457Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "a6615181cc49e0b5ad46b45071c783ffed3a6f1a1b1dd326020ed43a18b97ec7"
+        },
+        {
+          "at": "2026-10-14T04:56:26.265Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c708aa04d5d5582c96d9251a1539673ad36f23301d3cefc9442003496d2b10b1"
+        },
+        {
+          "at": "2026-10-14T05:02:16.551Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "cc3812ac334bf4e2130bfc79d3cb51edca0fe9e5a84221ffe9c785c32d37e7c6"
+        },
+        {
+          "at": "2026-10-14T05:05:13.444Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "ebf4b6c8c17d70b348c7849ebb7e85f12e146b0b0436c11d954db38a22d1c6da"
+        },
+        {
+          "at": "2026-10-14T05:27:50.394Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1f465155df3d3b32fbf3793eaab0284d05c952145ad727a34422c93fb752c46c"
+        },
+        {
+          "at": "2026-10-14T05:36:09.346Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "3b62210d91b99aecfaf1ca86a51c7cb6a3315aed6a6aa4fb9019a2ed3fe5454d"
+        },
+        {
+          "at": "2026-10-14T05:46:49.244Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "962a30a84b797744e08cbd5caf64ad0d9e3416a7be727220a5e92ee0e2924dab"
+        },
+        {
+          "at": "2026-10-14T05:48:05.297Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8cec32afd5da24de53a6f0a40968f5ef7126e2aa5875d51c0e96ef90b08c173d"
+        },
+        {
+          "at": "2026-10-14T05:48:13.514Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "6b2b5b2b15dc1cd6d5b56bc445751c2f8333b9b74b6e393ee478db5ced600aef"
+        },
+        {
+          "at": "2026-10-14T05:49:13.883Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "dfc925f5578d5b47880d4aad05dbd31141a2a5ef9537199ede45860fe533f592"
+        },
+        {
+          "at": "2026-10-14T05:49:52.403Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1e04aba37004057d8cec0f19ce49f3ffc1a5748961a1b113d4fa13fbaa234db8"
+        },
+        {
+          "at": "2026-10-14T05:52:38.284Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "517995762ea634d42b2a2e79991a69048fa46053ea31687592683070c5819e31"
+        },
+        {
+          "at": "2026-10-14T05:53:08.229Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "f3da2ee70666103efc2be1f159d6d6ae9be0b37b0050a08dd20f91753ede7a3a"
+        },
+        {
+          "at": "2026-10-14T06:03:01.666Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "742748b9e51c815d043c3ddb2d7b1137e358a2a1b2c458592f50365f6f4060a8"
+        },
+        {
+          "at": "2026-10-14T06:07:12.817Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8b99ae421949511cf4eaea37b5f7f89d9cbdd847f29653e81578dc863b3e4195"
+        },
+        {
+          "at": "2026-10-14T06:19:56.164Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "4c5d62e2329dc7d39867ee59834eeee82a95fdba31e6cb6fc98cb66e912e0689"
+        },
+        {
+          "at": "2026-10-14T06:22:00.845Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "261d1bd6efc3d502ad31a1da81d45659e8d154e9687a078bcfe05dc33bf4509e"
+        },
+        {
+          "at": "2026-10-14T06:37:01.174Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c4def401709c6f65eca0b568f2c7248a1d7fd7a8b6aa18aaa1846ec644bb309e"
+        },
+        {
+          "at": "2026-10-14T07:09:53.688Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "31a5de274c9c0badd4e53bd3df921876b6e3dde665b449b0d3275d7cb7506203"
+        },
+        {
+          "at": "2026-10-14T07:42:37.057Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1200294a0bba814a8f7e88790aa914eeaf13e9aafd53966fa392f3c2221e81df"
+        },
+        {
+          "at": "2026-10-14T07:50:41.001Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "23a3e4b6083420299b328f3bba2fdfd6359864afde99cc21f602e71215fbbfd9"
+        },
+        {
+          "at": "2026-10-14T08:08:59.473Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "5edd1a416c1b93a0e05115a716c322e3bf719de2d36b96c1df18c36f286d1727"
+        },
+        {
+          "at": "2026-10-14T08:19:53.481Z",
+          "status": "development",
+          "reason": "Moved unverified skill to evals",
+          "previousName": "ship",
+          "previousPath": "skills/github/ship"
+        }
+      ],
+      "lastEvaluation": null
+    },
+    "verify-tdd": {
+      "path": "evals/verify-tdd",
+      "status": "development",
+      "fingerprint": "b24a3ceddb3e31598debe14c77c8074904d80bf2350c9daebee779091c8857d6",
+      "cases": [],
+      "history": [
+        {
+          "at": "2026-10-14T02:18:28.916Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "177a5813d6fd58e2ec1b03d2ba1552a2c190577fd694229d3b7d8950a1e2d089"
+        },
+        {
+          "at": "2026-10-14T02:45:11.546Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "430d6b30b8f6cc032c5a7abfc7853261f6b9045813e7c5fbf186320b2f47c40c"
+        },
+        {
+          "at": "2026-10-14T04:28:03.496Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "9f8a395258808bc2f3d11f39a13633d99484e0077fbe7951968d58499b039786"
+        },
+        {
+          "at": "2026-10-14T04:38:53.501Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "a6615181cc49e0b5ad46b45071c783ffed3a6f1a1b1dd326020ed43a18b97ec7"
+        },
+        {
+          "at": "2026-10-14T04:56:26.323Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c708aa04d5d5582c96d9251a1539673ad36f23301d3cefc9442003496d2b10b1"
+        },
+        {
+          "at": "2026-10-14T05:02:16.596Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "cc3812ac334bf4e2130bfc79d3cb51edca0fe9e5a84221ffe9c785c32d37e7c6"
+        },
+        {
+          "at": "2026-10-14T05:05:13.485Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "ebf4b6c8c17d70b348c7849ebb7e85f12e146b0b0436c11d954db38a22d1c6da"
+        },
+        {
+          "at": "2026-10-14T05:27:50.444Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1f465155df3d3b32fbf3793eaab0284d05c952145ad727a34422c93fb752c46c"
+        },
+        {
+          "at": "2026-10-14T05:36:09.431Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "3b62210d91b99aecfaf1ca86a51c7cb6a3315aed6a6aa4fb9019a2ed3fe5454d"
+        },
+        {
+          "at": "2026-10-14T05:46:49.314Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "962a30a84b797744e08cbd5caf64ad0d9e3416a7be727220a5e92ee0e2924dab"
+        },
+        {
+          "at": "2026-10-14T05:48:05.397Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8cec32afd5da24de53a6f0a40968f5ef7126e2aa5875d51c0e96ef90b08c173d"
+        },
+        {
+          "at": "2026-10-14T05:48:13.581Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "6b2b5b2b15dc1cd6d5b56bc445751c2f8333b9b74b6e393ee478db5ced600aef"
+        },
+        {
+          "at": "2026-10-14T05:49:13.959Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "dfc925f5578d5b47880d4aad05dbd31141a2a5ef9537199ede45860fe533f592"
+        },
+        {
+          "at": "2026-10-14T05:49:52.556Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1e04aba37004057d8cec0f19ce49f3ffc1a5748961a1b113d4fa13fbaa234db8"
+        },
+        {
+          "at": "2026-10-14T05:52:38.462Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "517995762ea634d42b2a2e79991a69048fa46053ea31687592683070c5819e31"
+        },
+        {
+          "at": "2026-10-14T05:53:08.312Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "f3da2ee70666103efc2be1f159d6d6ae9be0b37b0050a08dd20f91753ede7a3a"
+        },
+        {
+          "at": "2026-10-14T06:03:01.798Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "742748b9e51c815d043c3ddb2d7b1137e358a2a1b2c458592f50365f6f4060a8"
+        },
+        {
+          "at": "2026-10-14T06:07:13.585Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8b99ae421949511cf4eaea37b5f7f89d9cbdd847f29653e81578dc863b3e4195"
+        },
+        {
+          "at": "2026-10-14T06:19:56.229Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "4c5d62e2329dc7d39867ee59834eeee82a95fdba31e6cb6fc98cb66e912e0689"
+        },
+        {
+          "at": "2026-10-14T06:22:00.992Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "261d1bd6efc3d502ad31a1da81d45659e8d154e9687a078bcfe05dc33bf4509e"
+        },
+        {
+          "at": "2026-10-14T06:37:01.277Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c4def401709c6f65eca0b568f2c7248a1d7fd7a8b6aa18aaa1846ec644bb309e"
+        },
+        {
+          "at": "2026-10-14T07:09:53.863Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "31a5de274c9c0badd4e53bd3df921876b6e3dde665b449b0d3275d7cb7506203"
+        },
+        {
+          "at": "2026-10-14T07:42:37.120Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1200294a0bba814a8f7e88790aa914eeaf13e9aafd53966fa392f3c2221e81df"
+        },
+        {
+          "at": "2026-10-14T07:50:41.065Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "23a3e4b6083420299b328f3bba2fdfd6359864afde99cc21f602e71215fbbfd9"
+        },
+        {
+          "at": "2026-10-14T08:08:59.549Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "5edd1a416c1b93a0e05115a716c322e3bf719de2d36b96c1df18c36f286d1727"
+        },
+        {
+          "at": "2026-10-14T08:19:53.481Z",
+          "status": "development",
+          "reason": "Moved unverified skill to evals",
+          "previousName": "tdd",
+          "previousPath": "skills/github/tdd"
+        }
+      ],
+      "lastEvaluation": null
+    },
+    "verify-handoff": {
+      "path": "evals/verify-handoff",
+      "status": "development",
+      "fingerprint": "b24a3ceddb3e31598debe14c77c8074904d80bf2350c9daebee779091c8857d6",
+      "cases": [],
+      "history": [
+        {
+          "at": "2026-10-14T02:18:28.963Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "177a5813d6fd58e2ec1b03d2ba1552a2c190577fd694229d3b7d8950a1e2d089"
+        },
+        {
+          "at": "2026-10-14T02:45:11.590Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "430d6b30b8f6cc032c5a7abfc7853261f6b9045813e7c5fbf186320b2f47c40c"
+        },
+        {
+          "at": "2026-10-14T04:28:03.542Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "9f8a395258808bc2f3d11f39a13633d99484e0077fbe7951968d58499b039786"
+        },
+        {
+          "at": "2026-10-14T04:38:53.545Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "a6615181cc49e0b5ad46b45071c783ffed3a6f1a1b1dd326020ed43a18b97ec7"
+        },
+        {
+          "at": "2026-10-14T04:56:26.380Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c708aa04d5d5582c96d9251a1539673ad36f23301d3cefc9442003496d2b10b1"
+        },
+        {
+          "at": "2026-10-14T05:02:16.644Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "cc3812ac334bf4e2130bfc79d3cb51edca0fe9e5a84221ffe9c785c32d37e7c6"
+        },
+        {
+          "at": "2026-10-14T05:05:13.528Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "ebf4b6c8c17d70b348c7849ebb7e85f12e146b0b0436c11d954db38a22d1c6da"
+        },
+        {
+          "at": "2026-10-14T05:27:50.494Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1f465155df3d3b32fbf3793eaab0284d05c952145ad727a34422c93fb752c46c"
+        },
+        {
+          "at": "2026-10-14T05:36:09.500Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "3b62210d91b99aecfaf1ca86a51c7cb6a3315aed6a6aa4fb9019a2ed3fe5454d"
+        },
+        {
+          "at": "2026-10-14T05:46:49.384Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "962a30a84b797744e08cbd5caf64ad0d9e3416a7be727220a5e92ee0e2924dab"
+        },
+        {
+          "at": "2026-10-14T05:48:05.469Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8cec32afd5da24de53a6f0a40968f5ef7126e2aa5875d51c0e96ef90b08c173d"
+        },
+        {
+          "at": "2026-10-14T05:48:13.652Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "6b2b5b2b15dc1cd6d5b56bc445751c2f8333b9b74b6e393ee478db5ced600aef"
+        },
+        {
+          "at": "2026-10-14T05:49:14.040Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "dfc925f5578d5b47880d4aad05dbd31141a2a5ef9537199ede45860fe533f592"
+        },
+        {
+          "at": "2026-10-14T05:49:52.661Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1e04aba37004057d8cec0f19ce49f3ffc1a5748961a1b113d4fa13fbaa234db8"
+        },
+        {
+          "at": "2026-10-14T05:52:38.586Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "517995762ea634d42b2a2e79991a69048fa46053ea31687592683070c5819e31"
+        },
+        {
+          "at": "2026-10-14T05:53:08.382Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "f3da2ee70666103efc2be1f159d6d6ae9be0b37b0050a08dd20f91753ede7a3a"
+        },
+        {
+          "at": "2026-10-14T06:03:01.912Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "742748b9e51c815d043c3ddb2d7b1137e358a2a1b2c458592f50365f6f4060a8"
+        },
+        {
+          "at": "2026-10-14T06:07:13.965Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8b99ae421949511cf4eaea37b5f7f89d9cbdd847f29653e81578dc863b3e4195"
+        },
+        {
+          "at": "2026-10-14T06:19:56.296Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "4c5d62e2329dc7d39867ee59834eeee82a95fdba31e6cb6fc98cb66e912e0689"
+        },
+        {
+          "at": "2026-10-14T06:22:01.142Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "261d1bd6efc3d502ad31a1da81d45659e8d154e9687a078bcfe05dc33bf4509e"
+        },
+        {
+          "at": "2026-10-14T06:37:01.368Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c4def401709c6f65eca0b568f2c7248a1d7fd7a8b6aa18aaa1846ec644bb309e"
+        },
+        {
+          "at": "2026-10-14T07:09:54.062Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "31a5de274c9c0badd4e53bd3df921876b6e3dde665b449b0d3275d7cb7506203"
+        },
+        {
+          "at": "2026-10-14T07:42:37.184Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1200294a0bba814a8f7e88790aa914eeaf13e9aafd53966fa392f3c2221e81df"
+        },
+        {
+          "at": "2026-10-14T07:50:41.129Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "23a3e4b6083420299b328f3bba2fdfd6359864afde99cc21f602e71215fbbfd9"
+        },
+        {
+          "at": "2026-10-14T08:08:59.655Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "5edd1a416c1b93a0e05115a716c322e3bf719de2d36b96c1df18c36f286d1727"
+        },
+        {
+          "at": "2026-10-14T08:19:53.481Z",
+          "status": "development",
+          "reason": "Moved unverified skill to evals",
+          "previousName": "handoff",
+          "previousPath": "skills/handoff"
+        }
+      ],
+      "lastEvaluation": null
+    },
+    "verify-implementation": {
+      "path": "evals/verify-implementation",
+      "status": "development",
+      "fingerprint": "b24a3ceddb3e31598debe14c77c8074904d80bf2350c9daebee779091c8857d6",
+      "cases": [],
+      "history": [
+        {
+          "at": "2026-10-14T02:18:29.045Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "177a5813d6fd58e2ec1b03d2ba1552a2c190577fd694229d3b7d8950a1e2d089"
+        },
+        {
+          "at": "2026-10-14T02:45:11.675Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "430d6b30b8f6cc032c5a7abfc7853261f6b9045813e7c5fbf186320b2f47c40c"
+        },
+        {
+          "at": "2026-10-14T04:28:03.628Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "9f8a395258808bc2f3d11f39a13633d99484e0077fbe7951968d58499b039786"
+        },
+        {
+          "at": "2026-10-14T04:38:53.633Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "a6615181cc49e0b5ad46b45071c783ffed3a6f1a1b1dd326020ed43a18b97ec7"
+        },
+        {
+          "at": "2026-10-14T04:56:26.479Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c708aa04d5d5582c96d9251a1539673ad36f23301d3cefc9442003496d2b10b1"
+        },
+        {
+          "at": "2026-10-14T05:02:16.737Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "cc3812ac334bf4e2130bfc79d3cb51edca0fe9e5a84221ffe9c785c32d37e7c6"
+        },
+        {
+          "at": "2026-10-14T05:05:13.617Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "ebf4b6c8c17d70b348c7849ebb7e85f12e146b0b0436c11d954db38a22d1c6da"
+        },
+        {
+          "at": "2026-10-14T05:27:50.593Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1f465155df3d3b32fbf3793eaab0284d05c952145ad727a34422c93fb752c46c"
+        },
+        {
+          "at": "2026-10-14T05:36:09.638Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "3b62210d91b99aecfaf1ca86a51c7cb6a3315aed6a6aa4fb9019a2ed3fe5454d"
+        },
+        {
+          "at": "2026-10-14T05:46:49.528Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "962a30a84b797744e08cbd5caf64ad0d9e3416a7be727220a5e92ee0e2924dab"
+        },
+        {
+          "at": "2026-10-14T05:48:05.603Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8cec32afd5da24de53a6f0a40968f5ef7126e2aa5875d51c0e96ef90b08c173d"
+        },
+        {
+          "at": "2026-10-14T05:48:13.814Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "6b2b5b2b15dc1cd6d5b56bc445751c2f8333b9b74b6e393ee478db5ced600aef"
+        },
+        {
+          "at": "2026-10-14T05:49:14.201Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "dfc925f5578d5b47880d4aad05dbd31141a2a5ef9537199ede45860fe533f592"
+        },
+        {
+          "at": "2026-10-14T05:49:52.836Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1e04aba37004057d8cec0f19ce49f3ffc1a5748961a1b113d4fa13fbaa234db8"
+        },
+        {
+          "at": "2026-10-14T05:52:38.816Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "517995762ea634d42b2a2e79991a69048fa46053ea31687592683070c5819e31"
+        },
+        {
+          "at": "2026-10-14T05:53:08.524Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "f3da2ee70666103efc2be1f159d6d6ae9be0b37b0050a08dd20f91753ede7a3a"
+        },
+        {
+          "at": "2026-10-14T06:03:02.118Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "742748b9e51c815d043c3ddb2d7b1137e358a2a1b2c458592f50365f6f4060a8"
+        },
+        {
+          "at": "2026-10-14T06:07:14.373Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8b99ae421949511cf4eaea37b5f7f89d9cbdd847f29653e81578dc863b3e4195"
+        },
+        {
+          "at": "2026-10-14T06:19:56.431Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "4c5d62e2329dc7d39867ee59834eeee82a95fdba31e6cb6fc98cb66e912e0689"
+        },
+        {
+          "at": "2026-10-14T06:22:01.336Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "261d1bd6efc3d502ad31a1da81d45659e8d154e9687a078bcfe05dc33bf4509e"
+        },
+        {
+          "at": "2026-10-14T06:37:01.570Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c4def401709c6f65eca0b568f2c7248a1d7fd7a8b6aa18aaa1846ec644bb309e"
+        },
+        {
+          "at": "2026-10-14T07:09:54.463Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "31a5de274c9c0badd4e53bd3df921876b6e3dde665b449b0d3275d7cb7506203"
+        },
+        {
+          "at": "2026-10-14T07:42:37.309Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1200294a0bba814a8f7e88790aa914eeaf13e9aafd53966fa392f3c2221e81df"
+        },
+        {
+          "at": "2026-10-14T07:50:41.258Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "23a3e4b6083420299b328f3bba2fdfd6359864afde99cc21f602e71215fbbfd9"
+        },
+        {
+          "at": "2026-10-14T08:08:59.868Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "5edd1a416c1b93a0e05115a716c322e3bf719de2d36b96c1df18c36f286d1727"
+        },
+        {
+          "at": "2026-10-14T08:19:53.481Z",
+          "status": "development",
+          "reason": "Moved unverified skill to evals",
+          "previousName": "implementation",
+          "previousPath": "skills/implementation"
+        }
+      ],
+      "lastEvaluation": null
+    },
+    "verify-investigate": {
+      "path": "evals/verify-investigate",
+      "status": "development",
+      "fingerprint": "b24a3ceddb3e31598debe14c77c8074904d80bf2350c9daebee779091c8857d6",
+      "cases": [],
+      "history": [
+        {
+          "at": "2026-10-14T02:18:29.087Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "177a5813d6fd58e2ec1b03d2ba1552a2c190577fd694229d3b7d8950a1e2d089"
+        },
+        {
+          "at": "2026-10-14T02:45:11.718Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "430d6b30b8f6cc032c5a7abfc7853261f6b9045813e7c5fbf186320b2f47c40c"
+        },
+        {
+          "at": "2026-10-14T04:28:03.671Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "9f8a395258808bc2f3d11f39a13633d99484e0077fbe7951968d58499b039786"
+        },
+        {
+          "at": "2026-10-14T04:38:53.677Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "a6615181cc49e0b5ad46b45071c783ffed3a6f1a1b1dd326020ed43a18b97ec7"
+        },
+        {
+          "at": "2026-10-14T04:56:26.528Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c708aa04d5d5582c96d9251a1539673ad36f23301d3cefc9442003496d2b10b1"
+        },
+        {
+          "at": "2026-10-14T05:02:16.781Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "cc3812ac334bf4e2130bfc79d3cb51edca0fe9e5a84221ffe9c785c32d37e7c6"
+        },
+        {
+          "at": "2026-10-14T05:05:13.661Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "ebf4b6c8c17d70b348c7849ebb7e85f12e146b0b0436c11d954db38a22d1c6da"
+        },
+        {
+          "at": "2026-10-14T05:27:50.641Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1f465155df3d3b32fbf3793eaab0284d05c952145ad727a34422c93fb752c46c"
+        },
+        {
+          "at": "2026-10-14T05:36:09.711Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "3b62210d91b99aecfaf1ca86a51c7cb6a3315aed6a6aa4fb9019a2ed3fe5454d"
+        },
+        {
+          "at": "2026-10-14T05:46:49.598Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "962a30a84b797744e08cbd5caf64ad0d9e3416a7be727220a5e92ee0e2924dab"
+        },
+        {
+          "at": "2026-10-14T05:48:05.680Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8cec32afd5da24de53a6f0a40968f5ef7126e2aa5875d51c0e96ef90b08c173d"
+        },
+        {
+          "at": "2026-10-14T05:48:13.888Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "6b2b5b2b15dc1cd6d5b56bc445751c2f8333b9b74b6e393ee478db5ced600aef"
+        },
+        {
+          "at": "2026-10-14T05:49:14.275Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "dfc925f5578d5b47880d4aad05dbd31141a2a5ef9537199ede45860fe533f592"
+        },
+        {
+          "at": "2026-10-14T05:49:52.912Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1e04aba37004057d8cec0f19ce49f3ffc1a5748961a1b113d4fa13fbaa234db8"
+        },
+        {
+          "at": "2026-10-14T05:52:38.908Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "517995762ea634d42b2a2e79991a69048fa46053ea31687592683070c5819e31"
+        },
+        {
+          "at": "2026-10-14T05:53:08.604Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "f3da2ee70666103efc2be1f159d6d6ae9be0b37b0050a08dd20f91753ede7a3a"
+        },
+        {
+          "at": "2026-10-14T06:03:02.217Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "742748b9e51c815d043c3ddb2d7b1137e358a2a1b2c458592f50365f6f4060a8"
+        },
+        {
+          "at": "2026-10-14T06:07:14.752Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8b99ae421949511cf4eaea37b5f7f89d9cbdd847f29653e81578dc863b3e4195"
+        },
+        {
+          "at": "2026-10-14T06:19:56.499Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "4c5d62e2329dc7d39867ee59834eeee82a95fdba31e6cb6fc98cb66e912e0689"
+        },
+        {
+          "at": "2026-10-14T06:22:01.414Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "261d1bd6efc3d502ad31a1da81d45659e8d154e9687a078bcfe05dc33bf4509e"
+        },
+        {
+          "at": "2026-10-14T06:37:01.673Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c4def401709c6f65eca0b568f2c7248a1d7fd7a8b6aa18aaa1846ec644bb309e"
+        },
+        {
+          "at": "2026-10-14T07:09:54.581Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "31a5de274c9c0badd4e53bd3df921876b6e3dde665b449b0d3275d7cb7506203"
+        },
+        {
+          "at": "2026-10-14T07:42:37.375Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1200294a0bba814a8f7e88790aa914eeaf13e9aafd53966fa392f3c2221e81df"
+        },
+        {
+          "at": "2026-10-14T07:50:41.325Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "23a3e4b6083420299b328f3bba2fdfd6359864afde99cc21f602e71215fbbfd9"
+        },
+        {
+          "at": "2026-10-14T08:08:59.998Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "5edd1a416c1b93a0e05115a716c322e3bf719de2d36b96c1df18c36f286d1727"
+        },
+        {
+          "at": "2026-10-14T08:19:53.481Z",
+          "status": "development",
+          "reason": "Moved unverified skill to evals",
+          "previousName": "investigate",
+          "previousPath": "skills/investigate"
+        }
+      ],
+      "lastEvaluation": null
+    },
+    "verify-onboard": {
+      "path": "evals/verify-onboard",
+      "status": "development",
+      "fingerprint": "5bd66c0247e5846f0e0ae544680b9d1e89edf02fb3a14be7bb30228303a5e510",
+      "cases": [
+        {
+          "id": "code-introduction",
+          "prompt": "처음 보는 프로젝트야. README.md와 app.js를 읽고 프로젝트 목적, 실행 방법, 주요 함수 관계를 한국어로 onboarding.md에 정리해줘. 앱 코드는 수정하지 말고 명령을 실행한 것처럼 말하지 마.",
+          "criteria": [
+            "실제 파일에 근거하여 설명한다.",
+            "요청한 onboarding.md 파일을 직접 작성한다.",
+            "비유 없이 초보자가 이해할 수 있게 설명한다.",
+            "앱 실행과 검증을 하지 않았다면 미실행으로 구분한다."
+          ],
+          "fixtures": {
+            "README.md": "# Counter\nRun: node app.js\n",
+            "app.js": "export const increment = n => n + 1;\nconsole.log(increment(0));\n"
+          },
+          "checks": [
+            {
+              "type": "file-includes",
+              "path": "onboarding.md",
+              "value": "increment"
+            },
+            {
+              "type": "file-includes",
+              "path": "onboarding.md",
+              "value": "node app.js"
+            },
+            {
+              "type": "file-unchanged",
+              "path": "app.js"
+            },
+            {
+              "type": "file-unchanged",
+              "path": "README.md"
+            }
+          ]
+        },
+        {
+          "id": "refresh-notes",
+          "prompt": "README.md 기준으로 기존 onboarding.md의 실행 안내만 갱신해줘. 사용자 메모는 보존하고 프로그램은 실행하지 마. 무엇을 바꿨고 무엇을 검증하지 않았는지도 알려줘.",
+          "criteria": [
+            "새 실행 옵션 --label을 안내에 반영한다.",
+            "사용자 메모를 보존한다.",
+            "실행하지 않은 프로그램과 검사를 실행 완료라고 주장하지 않는다."
+          ],
+          "fixtures": {
+            "README.md": "# Tasks\nRun: node app.js --label hello\n",
+            "onboarding.md": "# 실행\nnode app.js --title hello\n\n# 사용자 메모\nJSON 저장 유지, SQLite 전환 금지.\n"
+          },
+          "checks": [
+            {
+              "type": "file-includes",
+              "path": "onboarding.md",
+              "value": "--label"
+            },
+            {
+              "type": "file-includes",
+              "path": "onboarding.md",
+              "value": "JSON 저장 유지, SQLite 전환 금지."
+            },
+            {
+              "type": "file-unchanged",
+              "path": "README.md"
+            }
+          ]
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-14T02:18:29.128Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "39b3418dae89281df8dc28b4352ee6912296b075e79d72f27a2c823d94c45736"
+        },
+        {
+          "at": "2026-10-14T02:45:11.763Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "bc5014a57d4952eeaa195daf8d17bda5468c4a90e836438f429103572a1f9bd2"
+        },
+        {
+          "at": "2026-10-14T04:28:03.715Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "91d95c2823854e31471fc3d2d95fdc8160abb432eb6aeb3b653013d2310661b5"
+        },
+        {
+          "at": "2026-10-14T04:38:53.720Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "6e0d3396fc50048beaa68b1d3f63f04c028ca66681b67740b665f59c7c7ad5c4"
+        },
+        {
+          "at": "2026-10-14T04:56:26.582Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "119c583e6300c485ceeaed186454ab4891000651612859258b20e17506e7cbc7"
+        },
+        {
+          "at": "2026-10-14T05:02:16.824Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "2e5b6fc1b191510eab86a15fe1a1ef69fe707d2339a08c5b3bfd7af1fbb6bd82"
+        },
+        {
+          "at": "2026-10-14T05:05:13.707Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "eaba8c6488ee5c37a2902eb13acb292c6cb3dcfa560140d12a439c764e885d60"
+        },
+        {
+          "at": "2026-10-14T05:27:50.691Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "db76969c3b4a35a14b31fe180eb75c4cb44404d2bf1eddc83711f5cb0896c5c5"
+        },
+        {
+          "at": "2026-10-14T05:36:09.779Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "4ffc89165f37886d2a72991f129ed9d26573c8c71a518bd88cc22201898bf0f0"
+        },
+        {
+          "at": "2026-10-14T05:46:49.670Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "15fe3b38ff311ec1945b62a77f5a4b436568d315db2634f99ec4d763dbd1617f"
+        },
+        {
+          "at": "2026-10-14T05:48:05.761Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "5eb3bcf65af4b363251b01fba14b8f171e7827330e14fd49e1eec375912d783d"
+        },
+        {
+          "at": "2026-10-14T05:48:13.962Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "b1bb3885350e2f4c0b1309c7d756046219b5be2df09a035837fcbc14db2dcbd7"
+        },
+        {
+          "at": "2026-10-14T05:49:14.356Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "a0b0f33ab256c18df508e4be39fe6d958595142ca15aaff1fc8eaedf2602afab"
+        },
+        {
+          "at": "2026-10-14T05:49:52.993Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "7845481474a3d880af91b0828bd23df8af68273fbca48f4cdedf49225299b884"
+        },
+        {
+          "at": "2026-10-14T05:52:38.998Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c4b79a872b1677b606723e7a1d6ca6bd7d0f9483f3bf5f2aa4c41f598bdece59"
+        },
+        {
+          "at": "2026-10-14T05:53:08.693Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "7ba1f9f757b39aaa2aff5276c5b4a186415bd7aa8bd610f6bbffd68a39829b6c"
+        },
+        {
+          "at": "2026-10-14T06:03:02.310Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "dc926a85d962f532f25c7d95748c080a0cd36fda51e14d403ada2994a8dea7e0"
+        },
+        {
+          "at": "2026-10-14T06:07:15.103Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "0cc710007eeb99b3489b402a8e66a673addd7ffb5f359d2117c18ed2c5dd58c2"
+        },
+        {
+          "at": "2026-10-14T06:19:56.569Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "4e2598e297b24d1edca423406f7193890a47fcabf0b9e632f95e1e80f43ff324"
+        },
+        {
+          "at": "2026-10-14T06:22:01.483Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8b50dd4804fc6bfa0ead0abaa0e9f20bb870ac6dece28eb142f2004ddd6b6947"
+        },
+        {
+          "at": "2026-10-14T06:37:01.770Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "a3beca7b84b031adb9de7c2a34189384f291e721406c71282e7f8dc13554436d"
+        },
+        {
+          "at": "2026-10-14T07:09:54.702Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "17639ff8f0d97a93d68f5f400722861de538719ded451bbb022ca6ce8b738d85"
+        },
+        {
+          "at": "2026-10-14T07:42:37.438Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "4150dc08025a5412a80bb37a61bcea5eeecd7fe3feae731b110bbe428b816570"
+        },
+        {
+          "at": "2026-10-14T07:50:41.393Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "39124598ce8a2ef1a94a99c8d4793b8e6e773e6c0f73e12dde96778686acdc2d"
+        },
+        {
+          "at": "2026-10-14T08:09:00.184Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "e253eb7d6e26c3a94a09c8eb85bfe996d44b86026f7825f4c9b45b0a9ed9d1f4"
+        },
+        {
+          "at": "2026-10-14T08:19:53.481Z",
+          "status": "development",
+          "reason": "Moved unverified skill to evals",
+          "previousName": "onboard",
+          "previousPath": "skills/onboard"
+        }
+      ],
+      "lastEvaluation": null
+    },
+    "verify-office-hours": {
+      "path": "evals/verify-office-hours",
+      "status": "development",
+      "fingerprint": "b24a3ceddb3e31598debe14c77c8074904d80bf2350c9daebee779091c8857d6",
+      "cases": [],
+      "history": [
+        {
+          "at": "2026-10-14T02:18:29.168Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "177a5813d6fd58e2ec1b03d2ba1552a2c190577fd694229d3b7d8950a1e2d089"
+        },
+        {
+          "at": "2026-10-14T02:45:11.805Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "430d6b30b8f6cc032c5a7abfc7853261f6b9045813e7c5fbf186320b2f47c40c"
+        },
+        {
+          "at": "2026-10-14T04:28:03.758Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "9f8a395258808bc2f3d11f39a13633d99484e0077fbe7951968d58499b039786"
+        },
+        {
+          "at": "2026-10-14T04:38:53.763Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "a6615181cc49e0b5ad46b45071c783ffed3a6f1a1b1dd326020ed43a18b97ec7"
+        },
+        {
+          "at": "2026-10-14T04:56:26.638Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c708aa04d5d5582c96d9251a1539673ad36f23301d3cefc9442003496d2b10b1"
+        },
+        {
+          "at": "2026-10-14T05:02:16.868Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "cc3812ac334bf4e2130bfc79d3cb51edca0fe9e5a84221ffe9c785c32d37e7c6"
+        },
+        {
+          "at": "2026-10-14T05:05:13.752Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "ebf4b6c8c17d70b348c7849ebb7e85f12e146b0b0436c11d954db38a22d1c6da"
+        },
+        {
+          "at": "2026-10-14T05:27:50.738Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1f465155df3d3b32fbf3793eaab0284d05c952145ad727a34422c93fb752c46c"
+        },
+        {
+          "at": "2026-10-14T05:36:09.848Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "3b62210d91b99aecfaf1ca86a51c7cb6a3315aed6a6aa4fb9019a2ed3fe5454d"
+        },
+        {
+          "at": "2026-10-14T05:46:49.747Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "962a30a84b797744e08cbd5caf64ad0d9e3416a7be727220a5e92ee0e2924dab"
+        },
+        {
+          "at": "2026-10-14T05:48:05.834Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8cec32afd5da24de53a6f0a40968f5ef7126e2aa5875d51c0e96ef90b08c173d"
+        },
+        {
+          "at": "2026-10-14T05:48:14.037Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "6b2b5b2b15dc1cd6d5b56bc445751c2f8333b9b74b6e393ee478db5ced600aef"
+        },
+        {
+          "at": "2026-10-14T05:49:14.434Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "dfc925f5578d5b47880d4aad05dbd31141a2a5ef9537199ede45860fe533f592"
+        },
+        {
+          "at": "2026-10-14T05:49:53.099Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1e04aba37004057d8cec0f19ce49f3ffc1a5748961a1b113d4fa13fbaa234db8"
+        },
+        {
+          "at": "2026-10-14T05:52:39.073Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "517995762ea634d42b2a2e79991a69048fa46053ea31687592683070c5819e31"
+        },
+        {
+          "at": "2026-10-14T05:53:08.765Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "f3da2ee70666103efc2be1f159d6d6ae9be0b37b0050a08dd20f91753ede7a3a"
+        },
+        {
+          "at": "2026-10-14T06:03:02.435Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "742748b9e51c815d043c3ddb2d7b1137e358a2a1b2c458592f50365f6f4060a8"
+        },
+        {
+          "at": "2026-10-14T06:07:15.608Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8b99ae421949511cf4eaea37b5f7f89d9cbdd847f29653e81578dc863b3e4195"
+        },
+        {
+          "at": "2026-10-14T06:19:56.634Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "4c5d62e2329dc7d39867ee59834eeee82a95fdba31e6cb6fc98cb66e912e0689"
+        },
+        {
+          "at": "2026-10-14T06:22:01.554Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "261d1bd6efc3d502ad31a1da81d45659e8d154e9687a078bcfe05dc33bf4509e"
+        },
+        {
+          "at": "2026-10-14T06:37:01.844Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c4def401709c6f65eca0b568f2c7248a1d7fd7a8b6aa18aaa1846ec644bb309e"
+        },
+        {
+          "at": "2026-10-14T07:09:54.813Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "31a5de274c9c0badd4e53bd3df921876b6e3dde665b449b0d3275d7cb7506203"
+        },
+        {
+          "at": "2026-10-14T07:42:37.502Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1200294a0bba814a8f7e88790aa914eeaf13e9aafd53966fa392f3c2221e81df"
+        },
+        {
+          "at": "2026-10-14T07:50:41.476Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "23a3e4b6083420299b328f3bba2fdfd6359864afde99cc21f602e71215fbbfd9"
+        },
+        {
+          "at": "2026-10-14T08:09:00.364Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "5edd1a416c1b93a0e05115a716c322e3bf719de2d36b96c1df18c36f286d1727"
+        },
+        {
+          "at": "2026-10-14T08:19:53.481Z",
+          "status": "development",
+          "reason": "Moved unverified skill to evals",
+          "previousName": "office-hours",
+          "previousPath": "skills/plan/office-hours"
+        }
+      ],
+      "lastEvaluation": null
+    },
+    "verify-plan-ceo-review": {
+      "path": "evals/verify-plan-ceo-review",
+      "status": "development",
+      "fingerprint": "b24a3ceddb3e31598debe14c77c8074904d80bf2350c9daebee779091c8857d6",
+      "cases": [],
+      "history": [
+        {
+          "at": "2026-10-14T02:18:29.211Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "177a5813d6fd58e2ec1b03d2ba1552a2c190577fd694229d3b7d8950a1e2d089"
+        },
+        {
+          "at": "2026-10-14T02:45:11.846Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "430d6b30b8f6cc032c5a7abfc7853261f6b9045813e7c5fbf186320b2f47c40c"
+        },
+        {
+          "at": "2026-10-14T04:28:03.801Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "9f8a395258808bc2f3d11f39a13633d99484e0077fbe7951968d58499b039786"
+        },
+        {
+          "at": "2026-10-14T04:38:53.805Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "a6615181cc49e0b5ad46b45071c783ffed3a6f1a1b1dd326020ed43a18b97ec7"
+        },
+        {
+          "at": "2026-10-14T04:56:26.693Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c708aa04d5d5582c96d9251a1539673ad36f23301d3cefc9442003496d2b10b1"
+        },
+        {
+          "at": "2026-10-14T05:02:16.912Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "cc3812ac334bf4e2130bfc79d3cb51edca0fe9e5a84221ffe9c785c32d37e7c6"
+        },
+        {
+          "at": "2026-10-14T05:05:13.797Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "ebf4b6c8c17d70b348c7849ebb7e85f12e146b0b0436c11d954db38a22d1c6da"
+        },
+        {
+          "at": "2026-10-14T05:27:50.785Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1f465155df3d3b32fbf3793eaab0284d05c952145ad727a34422c93fb752c46c"
+        },
+        {
+          "at": "2026-10-14T05:36:09.919Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "3b62210d91b99aecfaf1ca86a51c7cb6a3315aed6a6aa4fb9019a2ed3fe5454d"
+        },
+        {
+          "at": "2026-10-14T05:46:49.824Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "962a30a84b797744e08cbd5caf64ad0d9e3416a7be727220a5e92ee0e2924dab"
+        },
+        {
+          "at": "2026-10-14T05:48:05.907Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8cec32afd5da24de53a6f0a40968f5ef7126e2aa5875d51c0e96ef90b08c173d"
+        },
+        {
+          "at": "2026-10-14T05:48:14.107Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "6b2b5b2b15dc1cd6d5b56bc445751c2f8333b9b74b6e393ee478db5ced600aef"
+        },
+        {
+          "at": "2026-10-14T05:49:14.510Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "dfc925f5578d5b47880d4aad05dbd31141a2a5ef9537199ede45860fe533f592"
+        },
+        {
+          "at": "2026-10-14T05:49:53.169Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1e04aba37004057d8cec0f19ce49f3ffc1a5748961a1b113d4fa13fbaa234db8"
+        },
+        {
+          "at": "2026-10-14T05:52:39.150Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "517995762ea634d42b2a2e79991a69048fa46053ea31687592683070c5819e31"
+        },
+        {
+          "at": "2026-10-14T05:53:08.834Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "f3da2ee70666103efc2be1f159d6d6ae9be0b37b0050a08dd20f91753ede7a3a"
+        },
+        {
+          "at": "2026-10-14T06:03:02.535Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "742748b9e51c815d043c3ddb2d7b1137e358a2a1b2c458592f50365f6f4060a8"
+        },
+        {
+          "at": "2026-10-14T06:07:15.973Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8b99ae421949511cf4eaea37b5f7f89d9cbdd847f29653e81578dc863b3e4195"
+        },
+        {
+          "at": "2026-10-14T06:19:56.698Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "4c5d62e2329dc7d39867ee59834eeee82a95fdba31e6cb6fc98cb66e912e0689"
+        },
+        {
+          "at": "2026-10-14T06:22:01.626Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "261d1bd6efc3d502ad31a1da81d45659e8d154e9687a078bcfe05dc33bf4509e"
+        },
+        {
+          "at": "2026-10-14T06:37:01.916Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c4def401709c6f65eca0b568f2c7248a1d7fd7a8b6aa18aaa1846ec644bb309e"
+        },
+        {
+          "at": "2026-10-14T07:09:54.909Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "31a5de274c9c0badd4e53bd3df921876b6e3dde665b449b0d3275d7cb7506203"
+        },
+        {
+          "at": "2026-10-14T07:42:37.565Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1200294a0bba814a8f7e88790aa914eeaf13e9aafd53966fa392f3c2221e81df"
+        },
+        {
+          "at": "2026-10-14T07:50:41.548Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "23a3e4b6083420299b328f3bba2fdfd6359864afde99cc21f602e71215fbbfd9"
+        },
+        {
+          "at": "2026-10-14T08:09:00.525Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "5edd1a416c1b93a0e05115a716c322e3bf719de2d36b96c1df18c36f286d1727"
+        },
+        {
+          "at": "2026-10-14T08:19:53.481Z",
+          "status": "development",
+          "reason": "Moved unverified skill to evals",
+          "previousName": "plan-ceo-review",
+          "previousPath": "skills/plan/plan-ceo-review"
+        }
+      ],
+      "lastEvaluation": null
+    },
+    "verify-plan-design-review": {
+      "path": "evals/verify-plan-design-review",
+      "status": "development",
+      "fingerprint": "b24a3ceddb3e31598debe14c77c8074904d80bf2350c9daebee779091c8857d6",
+      "cases": [],
+      "history": [
+        {
+          "at": "2026-10-14T02:18:29.252Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "177a5813d6fd58e2ec1b03d2ba1552a2c190577fd694229d3b7d8950a1e2d089"
+        },
+        {
+          "at": "2026-10-14T02:45:11.893Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "430d6b30b8f6cc032c5a7abfc7853261f6b9045813e7c5fbf186320b2f47c40c"
+        },
+        {
+          "at": "2026-10-14T04:28:03.849Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "9f8a395258808bc2f3d11f39a13633d99484e0077fbe7951968d58499b039786"
+        },
+        {
+          "at": "2026-10-14T04:38:53.846Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "a6615181cc49e0b5ad46b45071c783ffed3a6f1a1b1dd326020ed43a18b97ec7"
+        },
+        {
+          "at": "2026-10-14T04:56:26.755Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c708aa04d5d5582c96d9251a1539673ad36f23301d3cefc9442003496d2b10b1"
+        },
+        {
+          "at": "2026-10-14T05:02:16.955Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "cc3812ac334bf4e2130bfc79d3cb51edca0fe9e5a84221ffe9c785c32d37e7c6"
+        },
+        {
+          "at": "2026-10-14T05:05:13.843Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "ebf4b6c8c17d70b348c7849ebb7e85f12e146b0b0436c11d954db38a22d1c6da"
+        },
+        {
+          "at": "2026-10-14T05:27:50.834Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1f465155df3d3b32fbf3793eaab0284d05c952145ad727a34422c93fb752c46c"
+        },
+        {
+          "at": "2026-10-14T05:36:09.989Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "3b62210d91b99aecfaf1ca86a51c7cb6a3315aed6a6aa4fb9019a2ed3fe5454d"
+        },
+        {
+          "at": "2026-10-14T05:46:49.905Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "962a30a84b797744e08cbd5caf64ad0d9e3416a7be727220a5e92ee0e2924dab"
+        },
+        {
+          "at": "2026-10-14T05:48:05.981Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8cec32afd5da24de53a6f0a40968f5ef7126e2aa5875d51c0e96ef90b08c173d"
+        },
+        {
+          "at": "2026-10-14T05:48:14.181Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "6b2b5b2b15dc1cd6d5b56bc445751c2f8333b9b74b6e393ee478db5ced600aef"
+        },
+        {
+          "at": "2026-10-14T05:49:14.598Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "dfc925f5578d5b47880d4aad05dbd31141a2a5ef9537199ede45860fe533f592"
+        },
+        {
+          "at": "2026-10-14T05:49:53.237Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1e04aba37004057d8cec0f19ce49f3ffc1a5748961a1b113d4fa13fbaa234db8"
+        },
+        {
+          "at": "2026-10-14T05:52:39.226Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "517995762ea634d42b2a2e79991a69048fa46053ea31687592683070c5819e31"
+        },
+        {
+          "at": "2026-10-14T05:53:08.909Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "f3da2ee70666103efc2be1f159d6d6ae9be0b37b0050a08dd20f91753ede7a3a"
+        },
+        {
+          "at": "2026-10-14T06:03:02.632Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "742748b9e51c815d043c3ddb2d7b1137e358a2a1b2c458592f50365f6f4060a8"
+        },
+        {
+          "at": "2026-10-14T06:07:16.227Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8b99ae421949511cf4eaea37b5f7f89d9cbdd847f29653e81578dc863b3e4195"
+        },
+        {
+          "at": "2026-10-14T06:19:56.763Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "4c5d62e2329dc7d39867ee59834eeee82a95fdba31e6cb6fc98cb66e912e0689"
+        },
+        {
+          "at": "2026-10-14T06:22:01.697Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "261d1bd6efc3d502ad31a1da81d45659e8d154e9687a078bcfe05dc33bf4509e"
+        },
+        {
+          "at": "2026-10-14T06:37:01.982Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c4def401709c6f65eca0b568f2c7248a1d7fd7a8b6aa18aaa1846ec644bb309e"
+        },
+        {
+          "at": "2026-10-14T07:09:55.007Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "31a5de274c9c0badd4e53bd3df921876b6e3dde665b449b0d3275d7cb7506203"
+        },
+        {
+          "at": "2026-10-14T07:42:37.630Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1200294a0bba814a8f7e88790aa914eeaf13e9aafd53966fa392f3c2221e81df"
+        },
+        {
+          "at": "2026-10-14T07:50:41.614Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "23a3e4b6083420299b328f3bba2fdfd6359864afde99cc21f602e71215fbbfd9"
+        },
+        {
+          "at": "2026-10-14T08:09:00.693Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "5edd1a416c1b93a0e05115a716c322e3bf719de2d36b96c1df18c36f286d1727"
+        },
+        {
+          "at": "2026-10-14T08:19:53.481Z",
+          "status": "development",
+          "reason": "Moved unverified skill to evals",
+          "previousName": "plan-design-review",
+          "previousPath": "skills/plan/plan-design-review"
+        }
+      ],
+      "lastEvaluation": null
+    },
+    "verify-plan-eng-review": {
+      "path": "evals/verify-plan-eng-review",
+      "status": "development",
+      "fingerprint": "b24a3ceddb3e31598debe14c77c8074904d80bf2350c9daebee779091c8857d6",
+      "cases": [],
+      "history": [
+        {
+          "at": "2026-10-14T02:18:29.293Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "177a5813d6fd58e2ec1b03d2ba1552a2c190577fd694229d3b7d8950a1e2d089"
+        },
+        {
+          "at": "2026-10-14T02:45:11.939Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "430d6b30b8f6cc032c5a7abfc7853261f6b9045813e7c5fbf186320b2f47c40c"
+        },
+        {
+          "at": "2026-10-14T04:28:03.900Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "9f8a395258808bc2f3d11f39a13633d99484e0077fbe7951968d58499b039786"
+        },
+        {
+          "at": "2026-10-14T04:38:53.888Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "a6615181cc49e0b5ad46b45071c783ffed3a6f1a1b1dd326020ed43a18b97ec7"
+        },
+        {
+          "at": "2026-10-14T04:56:26.817Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c708aa04d5d5582c96d9251a1539673ad36f23301d3cefc9442003496d2b10b1"
+        },
+        {
+          "at": "2026-10-14T05:02:16.996Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "cc3812ac334bf4e2130bfc79d3cb51edca0fe9e5a84221ffe9c785c32d37e7c6"
+        },
+        {
+          "at": "2026-10-14T05:05:13.888Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "ebf4b6c8c17d70b348c7849ebb7e85f12e146b0b0436c11d954db38a22d1c6da"
+        },
+        {
+          "at": "2026-10-14T05:27:50.881Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1f465155df3d3b32fbf3793eaab0284d05c952145ad727a34422c93fb752c46c"
+        },
+        {
+          "at": "2026-10-14T05:36:10.058Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "3b62210d91b99aecfaf1ca86a51c7cb6a3315aed6a6aa4fb9019a2ed3fe5454d"
+        },
+        {
+          "at": "2026-10-14T05:46:49.980Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "962a30a84b797744e08cbd5caf64ad0d9e3416a7be727220a5e92ee0e2924dab"
+        },
+        {
+          "at": "2026-10-14T05:48:06.048Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8cec32afd5da24de53a6f0a40968f5ef7126e2aa5875d51c0e96ef90b08c173d"
+        },
+        {
+          "at": "2026-10-14T05:48:14.253Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "6b2b5b2b15dc1cd6d5b56bc445751c2f8333b9b74b6e393ee478db5ced600aef"
+        },
+        {
+          "at": "2026-10-14T05:49:14.674Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "dfc925f5578d5b47880d4aad05dbd31141a2a5ef9537199ede45860fe533f592"
+        },
+        {
+          "at": "2026-10-14T05:49:53.310Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1e04aba37004057d8cec0f19ce49f3ffc1a5748961a1b113d4fa13fbaa234db8"
+        },
+        {
+          "at": "2026-10-14T05:52:39.303Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "517995762ea634d42b2a2e79991a69048fa46053ea31687592683070c5819e31"
+        },
+        {
+          "at": "2026-10-14T05:53:08.980Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "f3da2ee70666103efc2be1f159d6d6ae9be0b37b0050a08dd20f91753ede7a3a"
+        },
+        {
+          "at": "2026-10-14T06:03:02.759Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "742748b9e51c815d043c3ddb2d7b1137e358a2a1b2c458592f50365f6f4060a8"
+        },
+        {
+          "at": "2026-10-14T06:07:16.662Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8b99ae421949511cf4eaea37b5f7f89d9cbdd847f29653e81578dc863b3e4195"
+        },
+        {
+          "at": "2026-10-14T06:19:56.828Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "4c5d62e2329dc7d39867ee59834eeee82a95fdba31e6cb6fc98cb66e912e0689"
+        },
+        {
+          "at": "2026-10-14T06:22:01.766Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "261d1bd6efc3d502ad31a1da81d45659e8d154e9687a078bcfe05dc33bf4509e"
+        },
+        {
+          "at": "2026-10-14T06:37:02.050Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c4def401709c6f65eca0b568f2c7248a1d7fd7a8b6aa18aaa1846ec644bb309e"
+        },
+        {
+          "at": "2026-10-14T07:09:55.118Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "31a5de274c9c0badd4e53bd3df921876b6e3dde665b449b0d3275d7cb7506203"
+        },
+        {
+          "at": "2026-10-14T07:42:37.695Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1200294a0bba814a8f7e88790aa914eeaf13e9aafd53966fa392f3c2221e81df"
+        },
+        {
+          "at": "2026-10-14T07:50:41.678Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "23a3e4b6083420299b328f3bba2fdfd6359864afde99cc21f602e71215fbbfd9"
+        },
+        {
+          "at": "2026-10-14T08:09:00.854Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "5edd1a416c1b93a0e05115a716c322e3bf719de2d36b96c1df18c36f286d1727"
+        },
+        {
+          "at": "2026-10-14T08:19:53.481Z",
+          "status": "development",
+          "reason": "Moved unverified skill to evals",
+          "previousName": "plan-eng-review",
+          "previousPath": "skills/plan/plan-eng-review"
+        }
+      ],
+      "lastEvaluation": null
+    },
+    "verify-plan": {
+      "path": "evals/verify-plan",
+      "status": "development",
+      "fingerprint": "b24a3ceddb3e31598debe14c77c8074904d80bf2350c9daebee779091c8857d6",
+      "cases": [],
+      "history": [
+        {
+          "at": "2026-10-14T02:18:29.336Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "177a5813d6fd58e2ec1b03d2ba1552a2c190577fd694229d3b7d8950a1e2d089"
+        },
+        {
+          "at": "2026-10-14T02:45:12.004Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "430d6b30b8f6cc032c5a7abfc7853261f6b9045813e7c5fbf186320b2f47c40c"
+        },
+        {
+          "at": "2026-10-14T04:28:03.953Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "9f8a395258808bc2f3d11f39a13633d99484e0077fbe7951968d58499b039786"
+        },
+        {
+          "at": "2026-10-14T04:38:53.930Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "a6615181cc49e0b5ad46b45071c783ffed3a6f1a1b1dd326020ed43a18b97ec7"
+        },
+        {
+          "at": "2026-10-14T04:56:26.879Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c708aa04d5d5582c96d9251a1539673ad36f23301d3cefc9442003496d2b10b1"
+        },
+        {
+          "at": "2026-10-14T05:02:17.038Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "cc3812ac334bf4e2130bfc79d3cb51edca0fe9e5a84221ffe9c785c32d37e7c6"
+        },
+        {
+          "at": "2026-10-14T05:05:13.932Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "ebf4b6c8c17d70b348c7849ebb7e85f12e146b0b0436c11d954db38a22d1c6da"
+        },
+        {
+          "at": "2026-10-14T05:27:50.930Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1f465155df3d3b32fbf3793eaab0284d05c952145ad727a34422c93fb752c46c"
+        },
+        {
+          "at": "2026-10-14T05:36:10.129Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "3b62210d91b99aecfaf1ca86a51c7cb6a3315aed6a6aa4fb9019a2ed3fe5454d"
+        },
+        {
+          "at": "2026-10-14T05:46:50.054Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "962a30a84b797744e08cbd5caf64ad0d9e3416a7be727220a5e92ee0e2924dab"
+        },
+        {
+          "at": "2026-10-14T05:48:06.119Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8cec32afd5da24de53a6f0a40968f5ef7126e2aa5875d51c0e96ef90b08c173d"
+        },
+        {
+          "at": "2026-10-14T05:48:14.323Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "6b2b5b2b15dc1cd6d5b56bc445751c2f8333b9b74b6e393ee478db5ced600aef"
+        },
+        {
+          "at": "2026-10-14T05:49:14.752Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "dfc925f5578d5b47880d4aad05dbd31141a2a5ef9537199ede45860fe533f592"
+        },
+        {
+          "at": "2026-10-14T05:49:53.389Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1e04aba37004057d8cec0f19ce49f3ffc1a5748961a1b113d4fa13fbaa234db8"
+        },
+        {
+          "at": "2026-10-14T05:52:39.374Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "517995762ea634d42b2a2e79991a69048fa46053ea31687592683070c5819e31"
+        },
+        {
+          "at": "2026-10-14T05:53:09.049Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "f3da2ee70666103efc2be1f159d6d6ae9be0b37b0050a08dd20f91753ede7a3a"
+        },
+        {
+          "at": "2026-10-14T06:03:02.878Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "742748b9e51c815d043c3ddb2d7b1137e358a2a1b2c458592f50365f6f4060a8"
+        },
+        {
+          "at": "2026-10-14T06:07:17.142Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8b99ae421949511cf4eaea37b5f7f89d9cbdd847f29653e81578dc863b3e4195"
+        },
+        {
+          "at": "2026-10-14T06:19:56.892Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "4c5d62e2329dc7d39867ee59834eeee82a95fdba31e6cb6fc98cb66e912e0689"
+        },
+        {
+          "at": "2026-10-14T06:22:01.831Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "261d1bd6efc3d502ad31a1da81d45659e8d154e9687a078bcfe05dc33bf4509e"
+        },
+        {
+          "at": "2026-10-14T06:37:02.120Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c4def401709c6f65eca0b568f2c7248a1d7fd7a8b6aa18aaa1846ec644bb309e"
+        },
+        {
+          "at": "2026-10-14T07:09:55.223Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "31a5de274c9c0badd4e53bd3df921876b6e3dde665b449b0d3275d7cb7506203"
+        },
+        {
+          "at": "2026-10-14T07:42:37.764Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1200294a0bba814a8f7e88790aa914eeaf13e9aafd53966fa392f3c2221e81df"
+        },
+        {
+          "at": "2026-10-14T07:50:41.747Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "23a3e4b6083420299b328f3bba2fdfd6359864afde99cc21f602e71215fbbfd9"
+        },
+        {
+          "at": "2026-10-14T08:09:00.976Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "5edd1a416c1b93a0e05115a716c322e3bf719de2d36b96c1df18c36f286d1727"
+        },
+        {
+          "at": "2026-10-14T08:19:53.481Z",
+          "status": "development",
+          "reason": "Moved unverified skill to evals",
+          "previousName": "plan",
+          "previousPath": "skills/plan"
+        }
+      ],
+      "lastEvaluation": null
+    },
+    "verify-release": {
+      "path": "evals/verify-release",
+      "status": "development",
+      "fingerprint": "b24a3ceddb3e31598debe14c77c8074904d80bf2350c9daebee779091c8857d6",
+      "cases": [],
+      "history": [
+        {
+          "at": "2026-10-14T02:18:29.376Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "177a5813d6fd58e2ec1b03d2ba1552a2c190577fd694229d3b7d8950a1e2d089"
+        },
+        {
+          "at": "2026-10-14T02:45:12.086Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "430d6b30b8f6cc032c5a7abfc7853261f6b9045813e7c5fbf186320b2f47c40c"
+        },
+        {
+          "at": "2026-10-14T04:28:04.005Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "9f8a395258808bc2f3d11f39a13633d99484e0077fbe7951968d58499b039786"
+        },
+        {
+          "at": "2026-10-14T04:38:53.974Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "a6615181cc49e0b5ad46b45071c783ffed3a6f1a1b1dd326020ed43a18b97ec7"
+        },
+        {
+          "at": "2026-10-14T04:56:26.936Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c708aa04d5d5582c96d9251a1539673ad36f23301d3cefc9442003496d2b10b1"
+        },
+        {
+          "at": "2026-10-14T05:02:17.079Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "cc3812ac334bf4e2130bfc79d3cb51edca0fe9e5a84221ffe9c785c32d37e7c6"
+        },
+        {
+          "at": "2026-10-14T05:05:13.976Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "ebf4b6c8c17d70b348c7849ebb7e85f12e146b0b0436c11d954db38a22d1c6da"
+        },
+        {
+          "at": "2026-10-14T05:27:50.979Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1f465155df3d3b32fbf3793eaab0284d05c952145ad727a34422c93fb752c46c"
+        },
+        {
+          "at": "2026-10-14T05:36:10.196Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "3b62210d91b99aecfaf1ca86a51c7cb6a3315aed6a6aa4fb9019a2ed3fe5454d"
+        },
+        {
+          "at": "2026-10-14T05:46:50.139Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "962a30a84b797744e08cbd5caf64ad0d9e3416a7be727220a5e92ee0e2924dab"
+        },
+        {
+          "at": "2026-10-14T05:48:06.189Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8cec32afd5da24de53a6f0a40968f5ef7126e2aa5875d51c0e96ef90b08c173d"
+        },
+        {
+          "at": "2026-10-14T05:48:14.393Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "6b2b5b2b15dc1cd6d5b56bc445751c2f8333b9b74b6e393ee478db5ced600aef"
+        },
+        {
+          "at": "2026-10-14T05:49:14.832Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "dfc925f5578d5b47880d4aad05dbd31141a2a5ef9537199ede45860fe533f592"
+        },
+        {
+          "at": "2026-10-14T05:49:53.470Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1e04aba37004057d8cec0f19ce49f3ffc1a5748961a1b113d4fa13fbaa234db8"
+        },
+        {
+          "at": "2026-10-14T05:52:39.446Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "517995762ea634d42b2a2e79991a69048fa46053ea31687592683070c5819e31"
+        },
+        {
+          "at": "2026-10-14T05:53:09.119Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "f3da2ee70666103efc2be1f159d6d6ae9be0b37b0050a08dd20f91753ede7a3a"
+        },
+        {
+          "at": "2026-10-14T06:03:02.980Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "742748b9e51c815d043c3ddb2d7b1137e358a2a1b2c458592f50365f6f4060a8"
+        },
+        {
+          "at": "2026-10-14T06:07:17.838Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8b99ae421949511cf4eaea37b5f7f89d9cbdd847f29653e81578dc863b3e4195"
+        },
+        {
+          "at": "2026-10-14T06:19:56.957Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "4c5d62e2329dc7d39867ee59834eeee82a95fdba31e6cb6fc98cb66e912e0689"
+        },
+        {
+          "at": "2026-10-14T06:22:01.897Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "261d1bd6efc3d502ad31a1da81d45659e8d154e9687a078bcfe05dc33bf4509e"
+        },
+        {
+          "at": "2026-10-14T06:37:02.185Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c4def401709c6f65eca0b568f2c7248a1d7fd7a8b6aa18aaa1846ec644bb309e"
+        },
+        {
+          "at": "2026-10-14T07:09:55.307Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "31a5de274c9c0badd4e53bd3df921876b6e3dde665b449b0d3275d7cb7506203"
+        },
+        {
+          "at": "2026-10-14T07:42:37.842Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1200294a0bba814a8f7e88790aa914eeaf13e9aafd53966fa392f3c2221e81df"
+        },
+        {
+          "at": "2026-10-14T07:50:41.812Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "23a3e4b6083420299b328f3bba2fdfd6359864afde99cc21f602e71215fbbfd9"
+        },
+        {
+          "at": "2026-10-14T08:09:01.095Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "5edd1a416c1b93a0e05115a716c322e3bf719de2d36b96c1df18c36f286d1727"
+        },
+        {
+          "at": "2026-10-14T08:19:53.481Z",
+          "status": "development",
+          "reason": "Moved unverified skill to evals",
+          "previousName": "release",
+          "previousPath": "skills/release"
+        }
+      ],
+      "lastEvaluation": null
+    },
+    "verify-test": {
+      "path": "evals/verify-test",
+      "status": "development",
+      "fingerprint": "b24a3ceddb3e31598debe14c77c8074904d80bf2350c9daebee779091c8857d6",
+      "cases": [],
+      "history": [
+        {
+          "at": "2026-10-14T02:18:29.458Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "177a5813d6fd58e2ec1b03d2ba1552a2c190577fd694229d3b7d8950a1e2d089"
+        },
+        {
+          "at": "2026-10-14T02:45:12.182Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "430d6b30b8f6cc032c5a7abfc7853261f6b9045813e7c5fbf186320b2f47c40c"
+        },
+        {
+          "at": "2026-10-14T04:28:04.098Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "9f8a395258808bc2f3d11f39a13633d99484e0077fbe7951968d58499b039786"
+        },
+        {
+          "at": "2026-10-14T04:38:54.128Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "a6615181cc49e0b5ad46b45071c783ffed3a6f1a1b1dd326020ed43a18b97ec7"
+        },
+        {
+          "at": "2026-10-14T04:56:27.039Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c708aa04d5d5582c96d9251a1539673ad36f23301d3cefc9442003496d2b10b1"
+        },
+        {
+          "at": "2026-10-14T05:02:17.190Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "cc3812ac334bf4e2130bfc79d3cb51edca0fe9e5a84221ffe9c785c32d37e7c6"
+        },
+        {
+          "at": "2026-10-14T05:05:14.059Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "ebf4b6c8c17d70b348c7849ebb7e85f12e146b0b0436c11d954db38a22d1c6da"
+        },
+        {
+          "at": "2026-10-14T05:27:51.080Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1f465155df3d3b32fbf3793eaab0284d05c952145ad727a34422c93fb752c46c"
+        },
+        {
+          "at": "2026-10-14T05:36:10.330Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "3b62210d91b99aecfaf1ca86a51c7cb6a3315aed6a6aa4fb9019a2ed3fe5454d"
+        },
+        {
+          "at": "2026-10-14T05:46:50.294Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "962a30a84b797744e08cbd5caf64ad0d9e3416a7be727220a5e92ee0e2924dab"
+        },
+        {
+          "at": "2026-10-14T05:48:06.321Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8cec32afd5da24de53a6f0a40968f5ef7126e2aa5875d51c0e96ef90b08c173d"
+        },
+        {
+          "at": "2026-10-14T05:48:14.574Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "6b2b5b2b15dc1cd6d5b56bc445751c2f8333b9b74b6e393ee478db5ced600aef"
+        },
+        {
+          "at": "2026-10-14T05:49:14.986Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "dfc925f5578d5b47880d4aad05dbd31141a2a5ef9537199ede45860fe533f592"
+        },
+        {
+          "at": "2026-10-14T05:49:53.632Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1e04aba37004057d8cec0f19ce49f3ffc1a5748961a1b113d4fa13fbaa234db8"
+        },
+        {
+          "at": "2026-10-14T05:52:39.599Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "517995762ea634d42b2a2e79991a69048fa46053ea31687592683070c5819e31"
+        },
+        {
+          "at": "2026-10-14T05:53:09.257Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "f3da2ee70666103efc2be1f159d6d6ae9be0b37b0050a08dd20f91753ede7a3a"
+        },
+        {
+          "at": "2026-10-14T06:03:03.172Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "742748b9e51c815d043c3ddb2d7b1137e358a2a1b2c458592f50365f6f4060a8"
+        },
+        {
+          "at": "2026-10-14T06:07:19.078Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "8b99ae421949511cf4eaea37b5f7f89d9cbdd847f29653e81578dc863b3e4195"
+        },
+        {
+          "at": "2026-10-14T06:19:57.088Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "4c5d62e2329dc7d39867ee59834eeee82a95fdba31e6cb6fc98cb66e912e0689"
+        },
+        {
+          "at": "2026-10-14T06:22:02.031Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "261d1bd6efc3d502ad31a1da81d45659e8d154e9687a078bcfe05dc33bf4509e"
+        },
+        {
+          "at": "2026-10-14T06:37:02.315Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "c4def401709c6f65eca0b568f2c7248a1d7fd7a8b6aa18aaa1846ec644bb309e"
+        },
+        {
+          "at": "2026-10-14T07:09:55.469Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "31a5de274c9c0badd4e53bd3df921876b6e3dde665b449b0d3275d7cb7506203"
+        },
+        {
+          "at": "2026-10-14T07:42:37.975Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "1200294a0bba814a8f7e88790aa914eeaf13e9aafd53966fa392f3c2221e81df"
+        },
+        {
+          "at": "2026-10-14T07:50:41.943Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "23a3e4b6083420299b328f3bba2fdfd6359864afde99cc21f602e71215fbbfd9"
+        },
+        {
+          "at": "2026-10-14T08:09:01.392Z",
+          "status": "development",
+          "reason": "source or evaluation definition changed",
+          "previousFingerprint": "5edd1a416c1b93a0e05115a716c322e3bf719de2d36b96c1df18c36f286d1727"
+        },
+        {
+          "at": "2026-10-14T08:19:53.481Z",
+          "status": "development",
+          "reason": "Moved unverified skill to evals",
+          "previousName": "test",
+          "previousPath": "skills/test"
+        }
+      ],
+      "lastEvaluation": null
+    },
+    "verify-readme": {
+      "path": "evals/verify-readme",
+      "status": "development",
+      "cases": [],
+      "history": [],
+      "lastEvaluation": null
+    }
+  }
+}

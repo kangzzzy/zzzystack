@@ -1,6 +1,6 @@
 {
   "name": "zzzystack",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "Skills and safe setup for Codex and Claude Code",
   "type": "module",
   "engines": {
@@ -12,13 +12,16 @@
   "scripts": {
     "setup": "node setup/cli.js",
     "validate": "node setup/cli.js validate",
-    "build": "node setup/cli.js build"
+    "build": "node setup/cli.js build",
+    "test": "node .github/verify.mjs"
   },
   "files": [
     "setup/*.js",
+    "skill-registry.json",
     "skills/",
+    "evals/",
+    "shared/",
     "hosts/",
-    "automations/",
     "VERSION",
     "README.md"
   ]

@@ -1,0 +1,4 @@
+interface:
+  display_name: "문서화"
+  short_description: "Word 문서 생성·편집부터 확장하는 문서화 스킬 모음"
+  default_prompt: "$verify-documentation 스킬로 요청한 Word 문서를 작성하거나 편집해 줘."
