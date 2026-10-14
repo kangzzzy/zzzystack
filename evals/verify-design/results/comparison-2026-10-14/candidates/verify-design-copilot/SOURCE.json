@@ -1,0 +1,22 @@
+{
+  "repository": "github/awesome-copilot",
+  "commit": "f25421d3f1b8b3bb217f78a7c0567cf7ec117cd8",
+  "retrieved_at": "2026-10-14T08:46:09.920065+00:00",
+  "scope": "Selected reference files, not a full repository clone. Original bytes preserved.",
+  "files": [
+    {
+      "path": "LICENSE",
+      "local": "upstream/LICENSE",
+      "sha256": "e32449d23085399adc1222f7a17408b730550258e51627c153cb108ca9955823",
+      "bytes": 1059,
+      "url": "https://github.com/github/awesome-copilot/blob/f25421d3f1b8b3bb217f78a7c0567cf7ec117cd8/LICENSE"
+    },
+    {
+      "path": "skills/architecture-blueprint-generator/SKILL.md",
+      "local": "upstream/skills/architecture-blueprint-generator/SKILL.original.txt",
+      "sha256": "a6a6f7a3b7a8210a9a391f2da3f3945bf86505341fd677eb2eb62e599520f512",
+      "bytes": 13358,
+      "url": "https://github.com/github/awesome-copilot/blob/f25421d3f1b8b3bb217f78a7c0567cf7ec117cd8/skills/architecture-blueprint-generator/SKILL.md"
+    }
+  ]
+}

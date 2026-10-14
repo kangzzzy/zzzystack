@@ -1,0 +1,58 @@
+{
+  "candidate": "verify-design-copilot",
+  "archived_at": "2026-10-14T09:06:23.700341+00:00",
+  "mode": "independent subagent, one exploratory trial",
+  "model": "Inherited host model; exact identifier not exposed",
+  "reasoning": "inherited; exact setting not exposed",
+  "environment": "Windows / local Codex tools, global AGENTS and i-have-adhd",
+  "input_sha256": "64a171e937482e2f45273c791766034932a8e61fb062140b6b796a70fdacb8d3",
+  "files": [
+    {
+      "path": "architecture.md",
+      "sha256": "e46facf444cfd865cde59167549f7b2f06580be777e015d7c81a3e1dace3b7c7"
+    },
+    {
+      "path": "check-results.json",
+      "sha256": "c5d125323d69348e1409118fbfb1c3a08d2df8986c7ff85d5f9dcf7b04bd6d93"
+    },
+    {
+      "path": "check.ps1",
+      "sha256": "7040d47ca8d3c4763a6ecae883a4d813da67181fe3b530861807161f396bcbd0"
+    },
+    {
+      "path": "requirements.md",
+      "sha256": "64a171e937482e2f45273c791766034932a8e61fb062140b6b796a70fdacb8d3"
+    },
+    {
+      "path": "test-log.md",
+      "sha256": "7901a05b25db85747455e1c5aa5ebb19303e8e1986c7cc56c0ab7b843681d6bd"
+    }
+  ],
+  "archive_note": "files preserves initial archive hashes. archived_files is final snapshot including review additions. arc42 source links/check path and lvgl review reproduction path adjusted for archive portability; no behavioral fixes.",
+  "archived_files": [
+    {
+      "path": "architecture.md",
+      "sha256": "e46facf444cfd865cde59167549f7b2f06580be777e015d7c81a3e1dace3b7c7"
+    },
+    {
+      "path": "check-results.json",
+      "sha256": "c5d125323d69348e1409118fbfb1c3a08d2df8986c7ff85d5f9dcf7b04bd6d93"
+    },
+    {
+      "path": "check.ps1",
+      "sha256": "7040d47ca8d3c4763a6ecae883a4d813da67181fe3b530861807161f396bcbd0"
+    },
+    {
+      "path": "requirements.md",
+      "sha256": "64a171e937482e2f45273c791766034932a8e61fb062140b6b796a70fdacb8d3"
+    },
+    {
+      "path": "review.md",
+      "sha256": "b27ba2f153b7ca4b13f8f6bc233393526ffaf703aa8943cb4bbd2224130b5f70"
+    },
+    {
+      "path": "test-log.md",
+      "sha256": "7901a05b25db85747455e1c5aa5ebb19303e8e1986c7cc56c0ab7b843681d6bd"
+    }
+  ]
+}

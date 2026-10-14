@@ -1,0 +1,62 @@
+{
+  "candidate": "verify-design-nanopb",
+  "archived_at": "2026-10-14T09:22:09.875286+00:00",
+  "mode": "Independent author interrupted; primary agent executed tests; one exploratory trial",
+  "model": "Inherited host model; exact identifier not exposed",
+  "reasoning": "inherited; exact setting not exposed",
+  "environment": "Windows / local Codex tools, global AGENTS and i-have-adhd",
+  "input_sha256": "64a171e937482e2f45273c791766034932a8e61fb062140b6b796a70fdacb8d3",
+  "files": [
+    {
+      "path": "check.py",
+      "sha256": "be1ba24359df7f62bf613413fb43ae66fc7c92fc469193262334872b97f4134b"
+    },
+    {
+      "path": "data-design.md",
+      "sha256": "9e9280f98ff5288ce589c309d68d6cdcc7fb935d897ce79ef4247fac049b946c"
+    },
+    {
+      "path": "examples.json",
+      "sha256": "a45600265db6ecd3f49dbe1ab15f3a1895657638e8cdb41a8df88ebe9de51973"
+    },
+    {
+      "path": "requirements.md",
+      "sha256": "64a171e937482e2f45273c791766034932a8e61fb062140b6b796a70fdacb8d3"
+    },
+    {
+      "path": "schema.sql",
+      "sha256": "63b6662b12ff82238b83c3633601eeeb5629aaefbc7bc08aca31662a2968b9b8"
+    },
+    {
+      "path": "test-log.md",
+      "sha256": "7f9eac468a3c9a8a3f4b37ba3fa064bf0b7d15c522bdca1a992742f65205363f"
+    }
+  ],
+  "archive_note": "files preserves initial archive hashes. archived_files is final snapshot including review additions. arc42 source links/check path and lvgl review reproduction path adjusted for archive portability; no behavioral fixes.",
+  "archived_files": [
+    {
+      "path": "check.py",
+      "sha256": "be1ba24359df7f62bf613413fb43ae66fc7c92fc469193262334872b97f4134b"
+    },
+    {
+      "path": "data-design.md",
+      "sha256": "9e9280f98ff5288ce589c309d68d6cdcc7fb935d897ce79ef4247fac049b946c"
+    },
+    {
+      "path": "examples.json",
+      "sha256": "a45600265db6ecd3f49dbe1ab15f3a1895657638e8cdb41a8df88ebe9de51973"
+    },
+    {
+      "path": "requirements.md",
+      "sha256": "64a171e937482e2f45273c791766034932a8e61fb062140b6b796a70fdacb8d3"
+    },
+    {
+      "path": "schema.sql",
+      "sha256": "63b6662b12ff82238b83c3633601eeeb5629aaefbc7bc08aca31662a2968b9b8"
+    },
+    {
+      "path": "test-log.md",
+      "sha256": "7f9eac468a3c9a8a3f4b37ba3fa064bf0b7d15c522bdca1a992742f65205363f"
+    }
+  ]
+}

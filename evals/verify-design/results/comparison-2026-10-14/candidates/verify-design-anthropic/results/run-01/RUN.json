@@ -1,0 +1,66 @@
+{
+  "candidate": "verify-design-anthropic",
+  "archived_at": "2026-10-14T08:53:58.357484+00:00",
+  "mode": "independent subagent, one exploratory trial",
+  "model": "Inherited host model; exact identifier not exposed",
+  "reasoning": "inherited; exact setting not exposed",
+  "environment": "Windows / local Codex tools, global AGENTS and i-have-adhd",
+  "input_sha256": "64a171e937482e2f45273c791766034932a8e61fb062140b6b796a70fdacb8d3",
+  "files": [
+    {
+      "path": "design.md",
+      "sha256": "b1b136797d9adede5ba59f2c89945ed081a9f18b4a9d003ff60d0951f6eda500"
+    },
+    {
+      "path": "prototype.html",
+      "sha256": "b9264234c654c0dd93ea250e7fd45433e063ecb389b20857c4be1ee7f90100b1"
+    },
+    {
+      "path": "requirements.md",
+      "sha256": "64a171e937482e2f45273c791766034932a8e61fb062140b6b796a70fdacb8d3"
+    },
+    {
+      "path": "test-log.md",
+      "sha256": "76015054488ae8c5fd45ad88942ebcfc9d790644c4b40ddbaa8e3d9d2cff3dd1"
+    },
+    {
+      "path": "test-results.txt",
+      "sha256": "83afbbc5c0fdadfed6abf9388e2ba7f663f1c4df8421eba43b07797c28b4e8e9"
+    },
+    {
+      "path": "test.cjs",
+      "sha256": "aa89025bf652b17925f43fa4ae3a70bc6205dcfc5b6da5d4e7ee44df5999a758"
+    }
+  ],
+  "archive_note": "files preserves initial archive hashes. archived_files is final snapshot including review additions. arc42 source links/check path and lvgl review reproduction path adjusted for archive portability; no behavioral fixes.",
+  "archived_files": [
+    {
+      "path": "design.md",
+      "sha256": "b1b136797d9adede5ba59f2c89945ed081a9f18b4a9d003ff60d0951f6eda500"
+    },
+    {
+      "path": "prototype.html",
+      "sha256": "b9264234c654c0dd93ea250e7fd45433e063ecb389b20857c4be1ee7f90100b1"
+    },
+    {
+      "path": "requirements.md",
+      "sha256": "64a171e937482e2f45273c791766034932a8e61fb062140b6b796a70fdacb8d3"
+    },
+    {
+      "path": "review.md",
+      "sha256": "42774db921a382d7df1d0a672bb6d59b3908091caf8d681c09211021557d83da"
+    },
+    {
+      "path": "test-log.md",
+      "sha256": "76015054488ae8c5fd45ad88942ebcfc9d790644c4b40ddbaa8e3d9d2cff3dd1"
+    },
+    {
+      "path": "test-results.txt",
+      "sha256": "83afbbc5c0fdadfed6abf9388e2ba7f663f1c4df8421eba43b07797c28b4e8e9"
+    },
+    {
+      "path": "test.cjs",
+      "sha256": "aa89025bf652b17925f43fa4ae3a70bc6205dcfc5b6da5d4e7ee44df5999a758"
+    }
+  ]
+}

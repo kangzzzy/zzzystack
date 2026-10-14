@@ -1,0 +1,43 @@
+{
+  "repository": "zephyrproject-rtos/zephyr",
+  "commit": "3c410f0dfe882176425eaff4d04d63daea2b81f4",
+  "retrieved_at": "2026-10-14T08:46:27.114058+00:00",
+  "scope": "Selected reference files, not a full repository clone. Original bytes preserved.",
+  "files": [
+    {
+      "path": "LICENSE",
+      "local": "upstream/LICENSE",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08",
+      "bytes": 11358,
+      "url": "https://github.com/zephyrproject-rtos/zephyr/blob/3c410f0dfe882176425eaff4d04d63daea2b81f4/LICENSE"
+    },
+    {
+      "path": "doc/develop/test/bsim.rst",
+      "local": "upstream/doc/develop/test/bsim.rst",
+      "sha256": "fd2a39f053c2d66398103e8d536567885d1d72de7616bf9fb0f12f4c69881649",
+      "bytes": 9703,
+      "url": "https://github.com/zephyrproject-rtos/zephyr/blob/3c410f0dfe882176425eaff4d04d63daea2b81f4/doc/develop/test/bsim.rst"
+    },
+    {
+      "path": "doc/develop/test/coverage.rst",
+      "local": "upstream/doc/develop/test/coverage.rst",
+      "sha256": "d3ddb4f4223f9f86292bd58c5a6eba418f3ea8e473f84c1d4ae37466a5ea7208",
+      "bytes": 9647,
+      "url": "https://github.com/zephyrproject-rtos/zephyr/blob/3c410f0dfe882176425eaff4d04d63daea2b81f4/doc/develop/test/coverage.rst"
+    },
+    {
+      "path": "doc/develop/test/index.rst",
+      "local": "upstream/doc/develop/test/index.rst",
+      "sha256": "916842d64e4a6c1104550c55906f1c47bd659fd3053c8ccb6f1f116e4674bc7f",
+      "bytes": 130,
+      "url": "https://github.com/zephyrproject-rtos/zephyr/blob/3c410f0dfe882176425eaff4d04d63daea2b81f4/doc/develop/test/index.rst"
+    },
+    {
+      "path": "doc/develop/test/ztest.rst",
+      "local": "upstream/doc/develop/test/ztest.rst",
+      "sha256": "21e758f660e89aec4c359aedfe8dcdb6f70b0abe6eff5d2b4742fd3bdada985f",
+      "bytes": 33947,
+      "url": "https://github.com/zephyrproject-rtos/zephyr/blob/3c410f0dfe882176425eaff4d04d63daea2b81f4/doc/develop/test/ztest.rst"
+    }
+  ]
+}

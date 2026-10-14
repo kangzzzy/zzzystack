@@ -1,0 +1,7 @@
+{
+  "command": {"schema_version":1,"kind":"COMMAND","sender":"PC","boot_id":"pc-1","seq":1,"sent_at":"2026-10-14T01:00:00.000Z","payload":{"command_id":"cmd-1","cycle_id":"cycle-1","target":"R1","type":"TRANSFER","from":"D1","to":"D2"}},
+  "status": {"schema_version":1,"kind":"STATUS","sender":"D1","boot_id":"d1-1","seq":10,"sent_at":"2026-10-14T01:00:00.000Z","payload":{"state":"READY","sensors":{"part_present":true,"door_closed":true,"safety_ok":true},"command_result":null}},
+  "measurement": {"schema_version":1,"kind":"MEASUREMENT","sender":"D1","boot_id":"d1-1","seq":11,"sent_at":"2026-10-14T01:00:00.000Z","payload":{"measurements":[{"name":"temperature","value":25.5,"unit":"degC","measured_at":"2026-10-14T01:00:00.000Z","validity":"VALID"}]}},
+  "config": {"schema_version":1,"kind":"CONFIG","sender":"PC","boot_id":"pc-1","seq":2,"sent_at":"2026-10-14T01:00:00.000Z","payload":{"revision":1,"heartbeat_ms":1000,"offline_ms":3000,"ack_ms":2000,"done_timeout_ms":null,"retention_days":null}},
+  "audit": {"schema_version":1,"kind":"AUDIT","sender":"PC","boot_id":"pc-1","seq":3,"sent_at":"2026-10-14T01:00:00.000Z","payload":{"event_id":"event-1","actor_id":"operator-1","role":"OPERATOR","action":"RECOVERY_CONFIRM","outcome":"DENIED","reason":"maintenance role required"}}
+}

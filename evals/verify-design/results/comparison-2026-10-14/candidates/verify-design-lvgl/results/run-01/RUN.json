@@ -1,0 +1,74 @@
+{
+  "candidate": "verify-design-lvgl",
+  "archived_at": "2026-10-14T09:00:55.843497+00:00",
+  "mode": "independent subagent, one exploratory trial",
+  "model": "Inherited host model; exact identifier not exposed",
+  "reasoning": "inherited; exact setting not exposed",
+  "environment": "Windows / local Codex tools, global AGENTS and i-have-adhd",
+  "input_sha256": "64a171e937482e2f45273c791766034932a8e61fb062140b6b796a70fdacb8d3",
+  "files": [
+    {
+      "path": "check-output.txt",
+      "sha256": "0ba85481634c604b99e5bdc475643816c5bbfa74d2357991333a591655dc12e2"
+    },
+    {
+      "path": "check.cjs",
+      "sha256": "526a774ca1d961158c11f9d6ec2e0575e60206c0f1d4fff1137d2f68bd91efd1"
+    },
+    {
+      "path": "design.md",
+      "sha256": "cd02d3afbb5f1ff440620925c1a5f7dfb02c24fd8a99ccf2405e086ddf204a08"
+    },
+    {
+      "path": "prototype.html",
+      "sha256": "61c5485aba05a4b7d517b750979c54252aa296690478472e49d17f2a675cb5c6"
+    },
+    {
+      "path": "requirements.md",
+      "sha256": "64a171e937482e2f45273c791766034932a8e61fb062140b6b796a70fdacb8d3"
+    },
+    {
+      "path": "test-log.md",
+      "sha256": "9be0fee7ecd12b5d26d22dcb3137ca6b127725af9f85f39432afdbabd322f122"
+    }
+  ],
+  "archive_note": "files preserves initial archive hashes. archived_files is final snapshot including review additions. arc42 source links/check path and lvgl review reproduction path adjusted for archive portability; no behavioral fixes.",
+  "archived_files": [
+    {
+      "path": "check-output.txt",
+      "sha256": "0ba85481634c604b99e5bdc475643816c5bbfa74d2357991333a591655dc12e2"
+    },
+    {
+      "path": "check.cjs",
+      "sha256": "526a774ca1d961158c11f9d6ec2e0575e60206c0f1d4fff1137d2f68bd91efd1"
+    },
+    {
+      "path": "design.md",
+      "sha256": "cd02d3afbb5f1ff440620925c1a5f7dfb02c24fd8a99ccf2405e086ddf204a08"
+    },
+    {
+      "path": "prototype.html",
+      "sha256": "61c5485aba05a4b7d517b750979c54252aa296690478472e49d17f2a675cb5c6"
+    },
+    {
+      "path": "requirements.md",
+      "sha256": "64a171e937482e2f45273c791766034932a8e61fb062140b6b796a70fdacb8d3"
+    },
+    {
+      "path": "review-repro-output.json",
+      "sha256": "47c99e5e014d1e92161ab9735aab6ff626e35b695c27b5aa07b62a6b884d57ad"
+    },
+    {
+      "path": "review-repro.cjs",
+      "sha256": "0580b82292dcf40f749536e7d6e5d4dac17f4bc0d9826222dfda993bbfe5d3a2"
+    },
+    {
+      "path": "review.md",
+      "sha256": "cb792a7b1cbe44ca519c93f7dc14f9f0572bb910b30d49936ed58b49b283ad2f"
+    },
+    {
+      "path": "test-log.md",
+      "sha256": "9be0fee7ecd12b5d26d22dcb3137ca6b127725af9f85f39432afdbabd322f122"
+    }
+  ]
+}

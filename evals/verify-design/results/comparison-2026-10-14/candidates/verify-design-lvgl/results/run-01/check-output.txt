@@ -1,0 +1,7 @@
+PASS normal sequence and ACK is not DONE
+PASS transfer loss holds lock and reconnect cannot resume
+PASS role restricted recovery after snapshot and field confirmation
+PASS ACK timeout no resend and alarm clearing no recovery
+PASS service rejects unsafe door stale and pause
+PASS transfer preconditions and duplicate dispatch rejected
+TOTAL 6 passed; pure JS model only; no browser, LVGL, network, or hardware execution

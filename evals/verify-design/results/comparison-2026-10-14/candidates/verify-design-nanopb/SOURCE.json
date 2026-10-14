@@ -1,0 +1,43 @@
+{
+  "repository": "nanopb/nanopb",
+  "commit": "26e4b21317f88a66fb351f5aa3d8cc0083622b25",
+  "retrieved_at": "2026-10-14T08:46:21.307837+00:00",
+  "scope": "Selected reference files, not a full repository clone. Original bytes preserved.",
+  "files": [
+    {
+      "path": "LICENSE.txt",
+      "local": "upstream/LICENSE.txt",
+      "sha256": "e2f2fc8fe3faa7dcb09dbe995db48c6ec5c1f72705db915101e4a83fed44f66d",
+      "bytes": 898,
+      "url": "https://github.com/nanopb/nanopb/blob/26e4b21317f88a66fb351f5aa3d8cc0083622b25/LICENSE.txt"
+    },
+    {
+      "path": "docs/concepts.md",
+      "local": "upstream/docs/concepts.md",
+      "sha256": "81d665824daf29e4de2a2c97aa4b997229e365fe863da534845420490a006b04",
+      "bytes": 24653,
+      "url": "https://github.com/nanopb/nanopb/blob/26e4b21317f88a66fb351f5aa3d8cc0083622b25/docs/concepts.md"
+    },
+    {
+      "path": "docs/reference.md",
+      "local": "upstream/docs/reference.md",
+      "sha256": "ad2dbbc2ce931bde58a53928b09a873b8ab898c8345419888a2984adaec24a44",
+      "bytes": 53523,
+      "url": "https://github.com/nanopb/nanopb/blob/26e4b21317f88a66fb351f5aa3d8cc0083622b25/docs/reference.md"
+    },
+    {
+      "path": "examples/simple/simple.c",
+      "local": "upstream/examples/simple/simple.c",
+      "sha256": "73a78d512608c349bf453f2f1f0eac677a2a9fd269ca5c34a10aa90ece85fe14",
+      "bytes": 2218,
+      "url": "https://github.com/nanopb/nanopb/blob/26e4b21317f88a66fb351f5aa3d8cc0083622b25/examples/simple/simple.c"
+    },
+    {
+      "path": "examples/simple/simple.proto",
+      "local": "upstream/examples/simple/simple.proto",
+      "sha256": "6d8836c38dfb09a74334b117ec21e6059d4335781b6206bc95e052912dc84ccb",
+      "bytes": 158,
+      "url": "https://github.com/nanopb/nanopb/blob/26e4b21317f88a66fb351f5aa3d8cc0083622b25/examples/simple/simple.proto"
+    }
+  ]
+}

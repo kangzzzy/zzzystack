@@ -1,0 +1,13 @@
+PASS 정상 사이클 / ACK와 DONE 구분
+PASS 이송 두절 / 3초 OFFLINE / 점유 보존
+PASS 재접속 무자동재개 / 유지보수 복구
+PASS ACK 유실 2초 / 재전송 없음
+PASS 중복 수신 실행 횟수 유지
+PASS 역순 주입 최신 상태 불변
+PASS 앱 재기동 차단 / 명령 보존
+PASS 문 열림 및 안전 입력 서비스 차단
+PASS 저장 실패 신규 명령 없음
+PASS 알람 확인만으로 정상화 금지
+PASS 일시정지 신규 배정 차단
+PASS 이송 센서 조건 서비스 검사
+12/12 passed

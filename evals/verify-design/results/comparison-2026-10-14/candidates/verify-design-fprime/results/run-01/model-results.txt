@@ -1,0 +1,28 @@
+PASS ACK never advances cycle
+PASS DONE advances modeled phase
+PASS late ACK never downgrades DONE
+PASS ACK loss retains ownership and stops dispatch
+PASS late DONE preserves HOLD
+PASS reconnect does not resend or release ownership
+PASS alarm clear does not recover
+PASS operator recovery rejected
+PASS maintenance mismatch rejected
+PASS maintenance confirmation stays paused
+PASS restart requires reconciliation
+PASS first command accepted
+PASS duplicate command returns cache
+PASS same ID different payload rejected
+PASS out-of-order status cannot overwrite latest
+PASS fresh safe stored request permitted
+PASS stale status blocks service
+PASS unsafe input blocks service
+PASS door open blocks service
+PASS storage failure blocks service
+PASS pause blocks new assignment
+PASS heartbeat offline boundary
+PASS ACK timeout boundary
+PASS example envelope fields
+PASS example transfer target and route
+PASS example command ID UUID
+PASS example cycle ID UUID
+TOTAL 27 passed; local illustrative model only

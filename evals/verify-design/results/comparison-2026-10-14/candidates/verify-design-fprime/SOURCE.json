@@ -1,0 +1,64 @@
+{
+  "repository": "nasa/fprime",
+  "commit": "d32863dd63952d1085890cc69c1b25ea6edb2257",
+  "retrieved_at": "2026-10-14T08:46:19.183860+00:00",
+  "scope": "Selected reference files, not a full repository clone. Original bytes preserved.",
+  "files": [
+    {
+      "path": "LICENSE.txt",
+      "local": "upstream/LICENSE.txt",
+      "sha256": "84a2c29a962a800b9dc839e5e5f39a319a1270e4781c8d135da79fbe76f807fc",
+      "bytes": 10856,
+      "url": "https://github.com/nasa/fprime/blob/d32863dd63952d1085890cc69c1b25ea6edb2257/LICENSE.txt"
+    },
+    {
+      "path": "NOTICE.txt",
+      "local": "upstream/NOTICE.txt",
+      "sha256": "328b90a3d2c57f4913b11de5c19f1702543d6bd49263f515dc7132ada7322d6c",
+      "bytes": 459,
+      "url": "https://github.com/nasa/fprime/blob/d32863dd63952d1085890cc69c1b25ea6edb2257/NOTICE.txt"
+    },
+    {
+      "path": "Svc/Health/Health.fpp",
+      "local": "upstream/Svc/Health/Health.fpp",
+      "sha256": "7d01d2ba246b966834e0dc76346c4db642e813917028368dd22f1cb6b7529e15",
+      "bytes": 5493,
+      "url": "https://github.com/nasa/fprime/blob/d32863dd63952d1085890cc69c1b25ea6edb2257/Svc/Health/Health.fpp"
+    },
+    {
+      "path": "Svc/Health/docs/img/HealthBDD.jpg",
+      "local": "upstream/Svc/Health/docs/img/HealthBDD.jpg",
+      "sha256": "1fc269f5a6df5e039bcb056057d5b6d6492cc9ed29a39de65a83f2267d66d45c",
+      "bytes": 129773,
+      "url": "https://github.com/nasa/fprime/blob/d32863dd63952d1085890cc69c1b25ea6edb2257/Svc/Health/docs/img/HealthBDD.jpg"
+    },
+    {
+      "path": "Svc/Health/docs/img/PingSequence.jpg",
+      "local": "upstream/Svc/Health/docs/img/PingSequence.jpg",
+      "sha256": "a1c96f7cf4e65b14fae57cd297dfad3d2d090adec240ee865203d9bbb61e8e3f",
+      "bytes": 74194,
+      "url": "https://github.com/nasa/fprime/blob/d32863dd63952d1085890cc69c1b25ea6edb2257/Svc/Health/docs/img/PingSequence.jpg"
+    },
+    {
+      "path": "Svc/Health/docs/sdd.md",
+      "local": "upstream/Svc/Health/docs/sdd.md",
+      "sha256": "8ec248236ee14bf01a372396c3a0d3f22ae5096e1bc67012cb5f1ed7db7659bc",
+      "bytes": 8616,
+      "url": "https://github.com/nasa/fprime/blob/d32863dd63952d1085890cc69c1b25ea6edb2257/Svc/Health/docs/sdd.md"
+    },
+    {
+      "path": "Svc/Interfaces/Com.fpp",
+      "local": "upstream/Svc/Interfaces/Com.fpp",
+      "sha256": "d2b70d6c69e063962c0c3ddf79c443404edf7bc1bbf0842905a3c9c887cf9af6",
+      "bytes": 867,
+      "url": "https://github.com/nasa/fprime/blob/d32863dd63952d1085890cc69c1b25ea6edb2257/Svc/Interfaces/Com.fpp"
+    },
+    {
+      "path": "docs/reference/communication-adapter-interface.md",
+      "local": "upstream/docs/reference/communication-adapter-interface.md",
+      "sha256": "1fc7ac3c74e4dbf35da40ebdd8683d57734954b91dc506ffe5fec583fa3c64ec",
+      "bytes": 11101,
+      "url": "https://github.com/nasa/fprime/blob/d32863dd63952d1085890cc69c1b25ea6edb2257/docs/reference/communication-adapter-interface.md"
+    }
+  ]
+}

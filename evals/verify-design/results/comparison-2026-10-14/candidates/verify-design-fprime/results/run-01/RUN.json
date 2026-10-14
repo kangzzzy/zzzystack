@@ -1,0 +1,62 @@
+{
+  "candidate": "verify-design-fprime",
+  "archived_at": "2026-10-14T09:15:10.890636+00:00",
+  "mode": "independent subagent, one exploratory trial",
+  "model": "Inherited host model; exact identifier not exposed",
+  "reasoning": "inherited; exact setting not exposed",
+  "environment": "Windows / local Codex tools, global AGENTS and i-have-adhd",
+  "input_sha256": "64a171e937482e2f45273c791766034932a8e61fb062140b6b796a70fdacb8d3",
+  "files": [
+    {
+      "path": "detail.md",
+      "sha256": "f207162ae9095b44bf61601b536c97c1c62e8f7822c43138e528051a17a91e3b"
+    },
+    {
+      "path": "interface.md",
+      "sha256": "87fe19b231ba55fc265f33ee7f26dca59e0089497ada22475e45bdc170f72388"
+    },
+    {
+      "path": "model-results.txt",
+      "sha256": "315f45a6c09747d53ee5cdeba136ba7af1bc2b2c2856c2b4fe9d7965e9c4d2e9"
+    },
+    {
+      "path": "requirements.md",
+      "sha256": "64a171e937482e2f45273c791766034932a8e61fb062140b6b796a70fdacb8d3"
+    },
+    {
+      "path": "test-log.md",
+      "sha256": "4a7ceb282315fdf144db843bf5415e0f235d7c37ca4d525fd6b169329baf40fd"
+    },
+    {
+      "path": "verify-model.ps1",
+      "sha256": "263036869d18fb3dccaf6ac5f72f295288d8319e6e24c519ab06d8c2e8944116"
+    }
+  ],
+  "archive_note": "files preserves initial archive hashes. archived_files is final snapshot including review additions. arc42 source links/check path and lvgl review reproduction path adjusted for archive portability; no behavioral fixes.",
+  "archived_files": [
+    {
+      "path": "detail.md",
+      "sha256": "f207162ae9095b44bf61601b536c97c1c62e8f7822c43138e528051a17a91e3b"
+    },
+    {
+      "path": "interface.md",
+      "sha256": "87fe19b231ba55fc265f33ee7f26dca59e0089497ada22475e45bdc170f72388"
+    },
+    {
+      "path": "model-results.txt",
+      "sha256": "315f45a6c09747d53ee5cdeba136ba7af1bc2b2c2856c2b4fe9d7965e9c4d2e9"
+    },
+    {
+      "path": "requirements.md",
+      "sha256": "64a171e937482e2f45273c791766034932a8e61fb062140b6b796a70fdacb8d3"
+    },
+    {
+      "path": "test-log.md",
+      "sha256": "4a7ceb282315fdf144db843bf5415e0f235d7c37ca4d525fd6b169329baf40fd"
+    },
+    {
+      "path": "verify-model.ps1",
+      "sha256": "263036869d18fb3dccaf6ac5f72f295288d8319e6e24c519ab06d8c2e8944116"
+    }
+  ]
+}

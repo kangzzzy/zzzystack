@@ -1,0 +1,90 @@
+{
+  "candidate": "verify-design-ui-ux-pro-max",
+  "archived_at": "2026-10-14T08:57:45.148503+00:00",
+  "mode": "independent subagent, one exploratory trial",
+  "model": "Inherited host model; exact identifier not exposed",
+  "reasoning": "inherited; exact setting not exposed",
+  "environment": "Windows / local Codex tools, global AGENTS and i-have-adhd",
+  "input_sha256": "64a171e937482e2f45273c791766034932a8e61fb062140b6b796a70fdacb8d3",
+  "files": [
+    {
+      "path": "design.md",
+      "sha256": "b28daa0cb45d26b89f3f20a8c1243b7d041d5695eddb127d7c1cb8b4dab443c6"
+    },
+    {
+      "path": "prototype.html",
+      "sha256": "d0fb7916a3695a20333a8580a39770e5142b8f0583967460bdb35ae5de46c02e"
+    },
+    {
+      "path": "requirements.md",
+      "sha256": "64a171e937482e2f45273c791766034932a8e61fb062140b6b796a70fdacb8d3"
+    },
+    {
+      "path": "search-design-system-retry.txt",
+      "sha256": "f6b1987df0344de9631ba3bd0e510475ef348158009c43ee9da6817627b1748a"
+    },
+    {
+      "path": "search-design-system.txt",
+      "sha256": "c0b0236ebd641e04c7a6c5cc0afbf72b847f5aff04bea2ce49d1c48408656449"
+    },
+    {
+      "path": "search-ux.txt",
+      "sha256": "ac623e5f088f400d3078099e4ba99f958c00f3865fc5095b6a495e64a97c291c"
+    },
+    {
+      "path": "test-log.md",
+      "sha256": "9e26d6a31ba292c27992a0288dcdb1de4c01c6613ca324ec053bf0221ad559f7"
+    },
+    {
+      "path": "validation-output.json",
+      "sha256": "9041606545b1850c3acf0ac64df93fae924f93fab0fd686b21003e3f4dbd5445"
+    },
+    {
+      "path": "verify.cjs",
+      "sha256": "b42bb5f3c093f67e1c74130728ed3f7298ef3c4b8cac8bd7030be23c2bdff8eb"
+    }
+  ],
+  "archive_note": "files preserves initial archive hashes. archived_files is final snapshot including review additions. arc42 source links/check path and lvgl review reproduction path adjusted for archive portability; no behavioral fixes.",
+  "archived_files": [
+    {
+      "path": "design.md",
+      "sha256": "b28daa0cb45d26b89f3f20a8c1243b7d041d5695eddb127d7c1cb8b4dab443c6"
+    },
+    {
+      "path": "prototype.html",
+      "sha256": "d0fb7916a3695a20333a8580a39770e5142b8f0583967460bdb35ae5de46c02e"
+    },
+    {
+      "path": "requirements.md",
+      "sha256": "64a171e937482e2f45273c791766034932a8e61fb062140b6b796a70fdacb8d3"
+    },
+    {
+      "path": "review.md",
+      "sha256": "4cd807c2d2917bf4ff1d13acb8444358d48084b923b974931fd57484b848f644"
+    },
+    {
+      "path": "search-design-system-retry.txt",
+      "sha256": "f6b1987df0344de9631ba3bd0e510475ef348158009c43ee9da6817627b1748a"
+    },
+    {
+      "path": "search-design-system.txt",
+      "sha256": "c0b0236ebd641e04c7a6c5cc0afbf72b847f5aff04bea2ce49d1c48408656449"
+    },
+    {
+      "path": "search-ux.txt",
+      "sha256": "ac623e5f088f400d3078099e4ba99f958c00f3865fc5095b6a495e64a97c291c"
+    },
+    {
+      "path": "test-log.md",
+      "sha256": "9e26d6a31ba292c27992a0288dcdb1de4c01c6613ca324ec053bf0221ad559f7"
+    },
+    {
+      "path": "validation-output.json",
+      "sha256": "9041606545b1850c3acf0ac64df93fae924f93fab0fd686b21003e3f4dbd5445"
+    },
+    {
+      "path": "verify.cjs",
+      "sha256": "b42bb5f3c093f67e1c74130728ed3f7298ef3c4b8cac8bd7030be23c2bdff8eb"
+    }
+  ]
+}

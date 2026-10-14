@@ -1,0 +1,38 @@
+{
+  "candidate": "verify-design-zephyr",
+  "archived_at": "2026-10-14T09:22:10.113029+00:00",
+  "mode": "Primary agent authored; not independent; plan review only",
+  "model": "Inherited host model; exact identifier not exposed",
+  "reasoning": "inherited; exact setting not exposed",
+  "environment": "Windows / local Codex tools, global AGENTS and i-have-adhd",
+  "input_sha256": "64a171e937482e2f45273c791766034932a8e61fb062140b6b796a70fdacb8d3",
+  "files": [
+    {
+      "path": "requirements.md",
+      "sha256": "64a171e937482e2f45273c791766034932a8e61fb062140b6b796a70fdacb8d3"
+    },
+    {
+      "path": "test-log.md",
+      "sha256": "bd90b87f9290dced29363da75a703a8492756caa313ba37f395dec57204c105b"
+    },
+    {
+      "path": "test-plan.md",
+      "sha256": "9cf2f1dfb46ce1418563fb6fdb757e0e61c55731083855251e6ae293d81d8116"
+    }
+  ],
+  "archive_note": "files preserves initial archive hashes. archived_files is final snapshot including review additions. arc42 source links/check path and lvgl review reproduction path adjusted for archive portability; no behavioral fixes.",
+  "archived_files": [
+    {
+      "path": "requirements.md",
+      "sha256": "64a171e937482e2f45273c791766034932a8e61fb062140b6b796a70fdacb8d3"
+    },
+    {
+      "path": "test-log.md",
+      "sha256": "bd90b87f9290dced29363da75a703a8492756caa313ba37f395dec57204c105b"
+    },
+    {
+      "path": "test-plan.md",
+      "sha256": "9cf2f1dfb46ce1418563fb6fdb757e0e61c55731083855251e6ae293d81d8116"
+    }
+  ]
+}

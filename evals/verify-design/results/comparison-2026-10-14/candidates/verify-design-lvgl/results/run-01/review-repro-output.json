@@ -1,0 +1,53 @@
+{
+  "runtime": "v24.14.1",
+  "scope": "Node VM model, no browser or hardware",
+  "results": [
+    {
+      "test": "stale recovery before",
+      "checked": true,
+      "fresh": false,
+      "unknown": true,
+      "lock": true
+    },
+    {
+      "test": "stale recovery after",
+      "recovered": true,
+      "unknown": false,
+      "lock": false,
+      "phase": "D2_READY",
+      "fresh": false,
+      "reason": "연결 끊김 또는 오래된 상태"
+    },
+    {
+      "test": "ACK then timeout",
+      "beforeStatus": "ACK",
+      "timeoutAccepted": true,
+      "unknown": true,
+      "phase": "TRANSFER"
+    },
+    {
+      "test": "before reload",
+      "unknown": true,
+      "lock": true,
+      "cmd": {
+        "command_id": "sim-1-2",
+        "cycle_id": "cycle-1",
+        "target": "R1",
+        "type": "TRANSFER",
+        "status": "REQUEST"
+      }
+    },
+    {
+      "test": "after reload and start",
+      "unknown": false,
+      "lock": false,
+      "cmd": {
+        "command_id": "sim-1-1",
+        "cycle_id": "cycle-1",
+        "target": "D1",
+        "type": "PROCESS",
+        "status": "REQUEST"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "runtime": "v24.14.1",
+  "scope": "Node VM, DOM stub; not browser visual validation",
+  "results": [
+    {
+      "name": "REQ-01/04 정상 사이클, ACK와 DONE 구별",
+      "result": "PASS"
+    },
+    {
+      "name": "REQ-03/06 이송 두절 점유 유지와 재전송 억제",
+      "result": "PASS"
+    },
+    {
+      "name": "REQ-07/09 재접속, 권한별 복구",
+      "result": "PASS"
+    },
+    {
+      "name": "REQ-10 서비스 함수에서 문/안전 차단",
+      "result": "PASS"
+    },
+    {
+      "name": "REQ-06 ACK timeout 재전송 없음",
+      "result": "PASS"
+    },
+    {
+      "name": "REQ-09 일시정지 동안 진행 응답 수신 가능, 다음 배정 차단",
+      "result": "PASS"
+    },
+    {
+      "name": "외부 의존성/장비 통신 코드 없음",
+      "result": "PASS"
+    }
+  ]
+}

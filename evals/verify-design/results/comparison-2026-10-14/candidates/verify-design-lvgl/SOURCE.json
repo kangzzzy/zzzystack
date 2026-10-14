@@ -1,0 +1,43 @@
+{
+  "repository": "lvgl/lvgl",
+  "commit": "b3b6027ca0036c53e61963346316062d5853c325",
+  "retrieved_at": "2026-10-14T17:46:22.857039+09:00",
+  "scope": "Selected reference files, not a full repository clone. Original bytes preserved.",
+  "files": [
+    {
+      "path": "docs/src/common-widget-features/parts_and_states.mdx",
+      "local": "upstream/docs/src/common-widget-features/parts_and_states.mdx",
+      "sha256": "bfcbd6aa7849908f050fa9b2ab1683b3c2f6bee68f836354c3515dc04db340ef",
+      "bytes": 3747,
+      "url": "https://github.com/lvgl/lvgl/blob/b3b6027ca0036c53e61963346316062d5853c325/docs/src/common-widget-features/parts_and_states.mdx"
+    },
+    {
+      "path": "examples/event/lv_example_event_button.c",
+      "local": "upstream/examples/event/lv_example_event_button.c",
+      "sha256": "a1471ee8efbf580259f9d194a1b7964db39e9bbf490a94e16dc514cf6844219a",
+      "bytes": 1803,
+      "url": "https://github.com/lvgl/lvgl/blob/b3b6027ca0036c53e61963346316062d5853c325/examples/event/lv_example_event_button.c"
+    },
+    {
+      "path": "examples/event/lv_example_event_click.c",
+      "local": "upstream/examples/event/lv_example_event_click.c",
+      "sha256": "14d41128749768f1cbe363ba276b95144dfd6f8b78768430453932f5a315932d",
+      "bytes": 993,
+      "url": "https://github.com/lvgl/lvgl/blob/b3b6027ca0036c53e61963346316062d5853c325/examples/event/lv_example_event_click.c"
+    },
+    {
+      "path": "LICENCE.txt",
+      "local": "upstream/LICENCE.txt",
+      "sha256": "27a80bd36832ab42d35ad60c08b2b230a807a9bc0d58e94ec1531543dc49cbe8",
+      "bytes": 1072,
+      "url": "https://github.com/lvgl/lvgl/blob/b3b6027ca0036c53e61963346316062d5853c325/LICENCE.txt"
+    },
+    {
+      "path": "COPYRIGHTS.md",
+      "local": "upstream/COPYRIGHTS.md",
+      "sha256": "8f561950f28b44408829e3edd89ada7b6a2dcf790590c4fa4070f5748dabb39b",
+      "bytes": 3117,
+      "url": "https://github.com/lvgl/lvgl/blob/b3b6027ca0036c53e61963346316062d5853c325/COPYRIGHTS.md"
+    }
+  ]
+}

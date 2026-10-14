@@ -1,0 +1,14 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const html=fs.readFileSync(__dirname+'/prototype.html','utf8');
+const nodes={};const context={document:{getElementById:id=>nodes[id]??=( {disabled:false})}};vm.createContext(context);vm.runInContext(html.match(/<script>([\s\S]*?)<\/script>/)[1],context);
+const run=code=>vm.runInContext(code,context);let results=[];
+function test(name,code){run('state=initial()');run(code);results.push({name,result:'PASS'})}
+context.assert=assert;
+test('REQ-01/04 정상 사이클, ACK와 DONE 구별',`state=transition(state,'start');assert.equal(state.cmd.status,'REQUEST');state=transition(state,'next');assert.equal(state.cmd.status,'ACK');assert.equal(state.d1,'PROCESSING');state=transition(state,'next');assert.equal(state.d1,'READY');for(let i=0;i<6;i++)state=transition(state,'next');assert.equal(state.phase,'완료');assert.equal(state.serial,3);`);
+test('REQ-03/06 이송 두절 점유 유지와 재전송 억제',`for(const a of ['start','next','next','next','next','drop'])state=transition(state,a);assert.equal(state.occupied,true);const id=state.cmd.command_id;state=transition(state,'next');assert.equal(state.cmd.command_id,id);assert.equal(state.unknown,true);render();assert.equal(document.getElementById('next').disabled,true);`);
+test('REQ-07/09 재접속, 권한별 복구',`for(const a of ['start','next','next','next','drop','reconnect'])state=transition(state,a);assert.equal(state.unknown,true);assert.equal(state.part2,false);state=transition(state,'query');state=transition(state,'checked',true);state=transition(state,'recover');assert.equal(state.unknown,true);state=transition(state,'role','maintenance');state=transition(state,'recover');assert.equal(state.unknown,false);assert.equal(state.paused,true);assert.equal(state.phase,'D2 배정 대기');state=transition(state,'next');assert.equal(state.serial,2);state=transition(state,'resume');state=transition(state,'next');assert.equal(state.cmd.target,'D2');`);
+test('REQ-10 서비스 함수에서 문/안전 차단',`state=transition(state,'door');state=transition(state,'start');assert.equal(state.cmd,null);state=transition(state,'door');state=transition(state,'safety');state=transition(state,'start');assert.equal(state.cmd,null);`);
+test('REQ-06 ACK timeout 재전송 없음',`state=transition(state,'start');state=transition(state,'acklost');state=transition(state,'next');assert.equal(state.unknown,true);assert.equal(state.serial,1);`);
+test('REQ-09 일시정지 동안 진행 응답 수신 가능, 다음 배정 차단',`for(const a of ['start','pause','next','next','next'])state=transition(state,a);assert.equal(state.phase,'이송 배정 대기');assert.equal(state.serial,1);`);
+assert(!/<script[^>]+src=|@import|fetch\(|WebSocket\(/.test(html));results.push({name:'외부 의존성/장비 통신 코드 없음',result:'PASS'});
+console.log(JSON.stringify({runtime:process.version,scope:'Node VM, DOM stub; not browser visual validation',results},null,2));

@@ -1,0 +1,113 @@
+{
+  "repository": "arc42/arc42-template",
+  "commit": "32fd461c91b184777e14f7d66b4e46db936fd3e5",
+  "retrieved_at": "2026-10-14T08:46:15.208019+00:00",
+  "scope": "Selected reference files, not a full repository clone. Original bytes preserved.",
+  "files": [
+    {
+      "path": "EN/adoc/01_introduction_and_goals.adoc",
+      "local": "upstream/EN/adoc/01_introduction_and_goals.adoc",
+      "sha256": "4be390e6e2666daadc43cc1c5f8ebdb8a4340d1f7acee1e6b7bdf9b22c7ba0c9",
+      "bytes": 4933,
+      "url": "https://github.com/arc42/arc42-template/blob/32fd461c91b184777e14f7d66b4e46db936fd3e5/EN/adoc/01_introduction_and_goals.adoc"
+    },
+    {
+      "path": "EN/adoc/02_architecture_constraints.adoc",
+      "local": "upstream/EN/adoc/02_architecture_constraints.adoc",
+      "sha256": "afac72c191258243492c399b033ccccb171024e26ec717d0b2e6aa7fef5fd24a",
+      "bytes": 1023,
+      "url": "https://github.com/arc42/arc42-template/blob/32fd461c91b184777e14f7d66b4e46db936fd3e5/EN/adoc/02_architecture_constraints.adoc"
+    },
+    {
+      "path": "EN/adoc/03_context_and_scope.adoc",
+      "local": "upstream/EN/adoc/03_context_and_scope.adoc",
+      "sha256": "6c7579dfabff3c1d873b11fd3494fb22f0b20be24c71eef09e5ed336ed2719f0",
+      "bytes": 2595,
+      "url": "https://github.com/arc42/arc42-template/blob/32fd461c91b184777e14f7d66b4e46db936fd3e5/EN/adoc/03_context_and_scope.adoc"
+    },
+    {
+      "path": "EN/adoc/04_solution_strategy.adoc",
+      "local": "upstream/EN/adoc/04_solution_strategy.adoc",
+      "sha256": "ba6c977c726fade76d7908557e384c60d19f0601bccc41acba24d697b404eb15",
+      "bytes": 1106,
+      "url": "https://github.com/arc42/arc42-template/blob/32fd461c91b184777e14f7d66b4e46db936fd3e5/EN/adoc/04_solution_strategy.adoc"
+    },
+    {
+      "path": "EN/adoc/05_building_block_view.adoc",
+      "local": "upstream/EN/adoc/05_building_block_view.adoc",
+      "sha256": "07ade7fe2d259b13eb16248ec0d1d4e76b7f279cb903f0cd67b58c1301cea456",
+      "bytes": 5992,
+      "url": "https://github.com/arc42/arc42-template/blob/32fd461c91b184777e14f7d66b4e46db936fd3e5/EN/adoc/05_building_block_view.adoc"
+    },
+    {
+      "path": "EN/adoc/06_runtime_view.adoc",
+      "local": "upstream/EN/adoc/06_runtime_view.adoc",
+      "sha256": "70b91ba59828cec61a154642e6e9b72469f9ca89499a6b19d2ca0361da84b435",
+      "bytes": 1791,
+      "url": "https://github.com/arc42/arc42-template/blob/32fd461c91b184777e14f7d66b4e46db936fd3e5/EN/adoc/06_runtime_view.adoc"
+    },
+    {
+      "path": "EN/adoc/07_deployment_view.adoc",
+      "local": "upstream/EN/adoc/07_deployment_view.adoc",
+      "sha256": "ca46d68da06077bff6540613f7cddb6cf05e500e23f55ab515ffd6188c979113",
+      "bytes": 3360,
+      "url": "https://github.com/arc42/arc42-template/blob/32fd461c91b184777e14f7d66b4e46db936fd3e5/EN/adoc/07_deployment_view.adoc"
+    },
+    {
+      "path": "EN/adoc/08_concepts.adoc",
+      "local": "upstream/EN/adoc/08_concepts.adoc",
+      "sha256": "9a9a7f0b8632366b7975997af2b3ec78e3a9e327a0c94b6c677ceac9d4164386",
+      "bytes": 2073,
+      "url": "https://github.com/arc42/arc42-template/blob/32fd461c91b184777e14f7d66b4e46db936fd3e5/EN/adoc/08_concepts.adoc"
+    },
+    {
+      "path": "EN/adoc/09_architecture_decisions.adoc",
+      "local": "upstream/EN/adoc/09_architecture_decisions.adoc",
+      "sha256": "f214aaf535e29aaf05527561fdff44310eff30bb88e4d6a37274ce9ba285fca2",
+      "bytes": 1232,
+      "url": "https://github.com/arc42/arc42-template/blob/32fd461c91b184777e14f7d66b4e46db936fd3e5/EN/adoc/09_architecture_decisions.adoc"
+    },
+    {
+      "path": "EN/adoc/10_quality_requirements.adoc",
+      "local": "upstream/EN/adoc/10_quality_requirements.adoc",
+      "sha256": "e6529156ce1f40655912f05d9bb81dfe98a32e0d3320d145d83e56411635dc64",
+      "bytes": 4400,
+      "url": "https://github.com/arc42/arc42-template/blob/32fd461c91b184777e14f7d66b4e46db936fd3e5/EN/adoc/10_quality_requirements.adoc"
+    },
+    {
+      "path": "EN/adoc/11_technical_risks.adoc",
+      "local": "upstream/EN/adoc/11_technical_risks.adoc",
+      "sha256": "de682f78421518c2edfab705f2ec211743590a0a18e53b935f9c98d9448564eb",
+      "bytes": 898,
+      "url": "https://github.com/arc42/arc42-template/blob/32fd461c91b184777e14f7d66b4e46db936fd3e5/EN/adoc/11_technical_risks.adoc"
+    },
+    {
+      "path": "EN/adoc/12_glossary.adoc",
+      "local": "upstream/EN/adoc/12_glossary.adoc",
+      "sha256": "121fa077fb03250f123600381067ba96ed30dd03e6a11ab062b4aa90e0e34c73",
+      "bytes": 838,
+      "url": "https://github.com/arc42/arc42-template/blob/32fd461c91b184777e14f7d66b4e46db936fd3e5/EN/adoc/12_glossary.adoc"
+    },
+    {
+      "path": "EN/adoc/about-arc42.adoc",
+      "local": "upstream/EN/adoc/about-arc42.adoc",
+      "sha256": "3d818c48145c4260717a73b15f73de6fa60eeee4a9a831c892be4a89ab1acb29",
+      "bytes": 380,
+      "url": "https://github.com/arc42/arc42-template/blob/32fd461c91b184777e14f7d66b4e46db936fd3e5/EN/adoc/about-arc42.adoc"
+    },
+    {
+      "path": "EN/adoc/config.adoc",
+      "local": "upstream/EN/adoc/config.adoc",
+      "sha256": "1a2c78782e23d589f9bc3418f7fbbd3590b59c8f08435dd387ca385a49742504",
+      "bytes": 204,
+      "url": "https://github.com/arc42/arc42-template/blob/32fd461c91b184777e14f7d66b4e46db936fd3e5/EN/adoc/config.adoc"
+    },
+    {
+      "path": "LICENSE.txt",
+      "local": "upstream/LICENSE.txt",
+      "sha256": "547da100a7240af6ec37b0152a932203701a54aac32f6015c26bbaea121c4440",
+      "bytes": 1514,
+      "url": "https://github.com/arc42/arc42-template/blob/32fd461c91b184777e14f7d66b4e46db936fd3e5/LICENSE.txt"
+    }
+  ]
+}

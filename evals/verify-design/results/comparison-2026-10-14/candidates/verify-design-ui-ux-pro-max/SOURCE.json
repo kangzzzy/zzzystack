@@ -1,0 +1,680 @@
+{
+  "repository": "nextlevelbuilder/ui-ux-pro-max-skill",
+  "commit": "7246805992a42b7bba37d4cac83b01416f0c6c44",
+  "retrieved_at": "2026-10-14T08:46:08.842508+00:00",
+  "scope": "Selected reference files, not a full repository clone. Original bytes preserved.",
+  "files": [
+    {
+      "path": "LICENSE",
+      "local": "upstream/LICENSE",
+      "sha256": "738f69dfa83db5c347c678fb9d90e560877059f0de93a327c39001bff92dc014",
+      "bytes": 1075,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/LICENSE"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/app-interface.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/app-interface.csv",
+      "sha256": "331e7cf2c0b222d80c566c5f255c63cb339f65bfd02e471a720f28e4864a9f08",
+      "bytes": 11046,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/app-interface.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/catalog-summary.json",
+      "local": "upstream/src/ui-ux-pro-max/data/catalog-summary.json",
+      "sha256": "6638da97231c07fb5cef3cd9d3ce483ca7b2f9748980f8c27490eb03968d8894",
+      "bytes": 2392,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/catalog-summary.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/charts.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/charts.csv",
+      "sha256": "4115cf1120680f2cedef0676cb648f30c7ef4699e2a947535d4113e71ed3b12a",
+      "bytes": 23365,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/charts.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/colors.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/colors.csv",
+      "sha256": "8162429222bce22df62b564085946a30d07cc9722c58d0a3a494bd0d1d00841c",
+      "bytes": 37940,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/colors.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/data-provenance.json",
+      "local": "upstream/src/ui-ux-pro-max/data/data-provenance.json",
+      "sha256": "e82fb33ed49375a300e93d9c11ccd1c1493c999e84ee7ee295e527634786e2e0",
+      "bytes": 36686,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/data-provenance.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/google-font-licenses.json",
+      "local": "upstream/src/ui-ux-pro-max/data/google-font-licenses.json",
+      "sha256": "35688523f2955795caa1a47c53b83099e60c1708461476f9cc3a050cf3b0148a",
+      "bytes": 433127,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/google-font-licenses.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/google-fonts.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/google-fonts.csv",
+      "sha256": "1c8c3b2ea1faf6a1012da463756def8b3889db33f2226f0343bb4daa80307d03",
+      "bytes": 747241,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/google-fonts.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/icons.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/icons.csv",
+      "sha256": "50816c6012030178195a16ee481ebf58b47bd985d70e8ec58886cc83f6eddafc",
+      "bytes": 57945,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/icons.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/landing.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/landing.csv",
+      "sha256": "9a2edd3bb676c2a58f00ade7a062e285222d4297bfd847c8d5b056f0dbbf52d0",
+      "bytes": 25449,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/landing.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/motion.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/motion.csv",
+      "sha256": "381affe8df8ea1f66fbbda2598827f9f54299107bbe6a1b4e9b68f6b62091ceb",
+      "bytes": 14679,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/motion.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/phosphor-icons-upstream.json",
+      "local": "upstream/src/ui-ux-pro-max/data/phosphor-icons-upstream.json",
+      "sha256": "2399325233b277b5c97a80e6a5e8941154f5d057beee4e7613db87c87d700236",
+      "bytes": 823933,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/phosphor-icons-upstream.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/products.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/products.csv",
+      "sha256": "42473f75e8dde5987bdf89ce55d8c168091b80a356cae691dd60247d80720b70",
+      "bytes": 75623,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/products.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/react-performance.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/react-performance.csv",
+      "sha256": "3d925802539abac5afeb63ae8aa1960b7229ad271b3a47caed40ab2d97ad0734",
+      "bytes": 15080,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/react-performance.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/stacks/angular.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/stacks/angular.csv",
+      "sha256": "704be83f2bad30c7e6de01afb113ffa01e0c458762f48b7102f31ba2367b5553",
+      "bytes": 19863,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/stacks/angular.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/stacks/astro.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/stacks/astro.csv",
+      "sha256": "2c2f55fadaafc05e04cc321c8194a1a28b656e6757fe2ba316f41b16428299c6",
+      "bytes": 14591,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/stacks/astro.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/stacks/avalonia.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/stacks/avalonia.csv",
+      "sha256": "442fca14675a020683473e7e49f08abb27b9df0765c80efe54aef61f1a4ac258",
+      "bytes": 27327,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/stacks/avalonia.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/stacks/flutter.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/stacks/flutter.csv",
+      "sha256": "64dba0ac17349f28bce517a0f5f48c54d9ed2e487ec0c0258303463b382f41a0",
+      "bytes": 14192,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/stacks/flutter.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/stacks/html-tailwind.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/stacks/html-tailwind.csv",
+      "sha256": "d05a581d20af57b8ca0104a6d31d90a07c437d500662a96c3029fc2f9a4678ee",
+      "bytes": 16551,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/stacks/html-tailwind.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/stacks/javafx.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/stacks/javafx.csv",
+      "sha256": "2e819b8d5abdd23ad4dae0991650fdb57af497aabd68b37463aa9c442944c869",
+      "bytes": 33577,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/stacks/javafx.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/stacks/jetpack-compose.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/stacks/jetpack-compose.csv",
+      "sha256": "699de218b286948eaec7d15767b6e1350ee299167e49bf476d82e3ff58724e0a",
+      "bytes": 12295,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/stacks/jetpack-compose.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/stacks/laravel.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/stacks/laravel.csv",
+      "sha256": "854ea4daa5fc61292d22235ad33b49ba3fe22423c3de8d3cb03758ffed3b59f9",
+      "bytes": 20163,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/stacks/laravel.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/stacks/nextjs.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/stacks/nextjs.csv",
+      "sha256": "ecd2c27b2ea0127d203ae726060efcdd7335b5e83f96b99e4f3befbbfeebd5a4",
+      "bytes": 18687,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/stacks/nextjs.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/stacks/nuxt-ui.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/stacks/nuxt-ui.csv",
+      "sha256": "fce682a338cfcdbf35d318d20e5befbe7b5d81b05abc37f87677a6d9cde84dc6",
+      "bytes": 28700,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/stacks/nuxt-ui.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/stacks/nuxtjs.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/stacks/nuxtjs.csv",
+      "sha256": "3d9b54ed2d151bd9c86e9e5609b8a6f88a00c4c52fa601a30af96c49b2c4d176",
+      "bytes": 23014,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/stacks/nuxtjs.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/stacks/react-native.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/stacks/react-native.csv",
+      "sha256": "ba31dd9c0c04da6bc02a74448bf121f9c0728ae5ba3b4d47b487778b0a1135b5",
+      "bytes": 14049,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/stacks/react-native.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/stacks/react.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/stacks/react.csv",
+      "sha256": "4dd176a9787e5c6306b5df94158d75955adcdc6edab41ce5286641a5842303c1",
+      "bytes": 21166,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/stacks/react.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/stacks/shadcn.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/stacks/shadcn.csv",
+      "sha256": "e56cfde5b74907836ac3582a4779d5b7f3d206a702ab81b8669a1b668c3eeb51",
+      "bytes": 23184,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/stacks/shadcn.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/stacks/svelte.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/stacks/svelte.csv",
+      "sha256": "f6e379ba802941ba26b01d4ffbe3cd39120f2587659a1d93851c707f66bc13db",
+      "bytes": 15078,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/stacks/svelte.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/stacks/swiftui.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/stacks/swiftui.csv",
+      "sha256": "bdd9231ff3ad658f4e7c063e1eb49df2fd09ac8d90631a86df899b39833b9623",
+      "bytes": 15323,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/stacks/swiftui.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/stacks/threejs.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/stacks/threejs.csv",
+      "sha256": "155d583b9c64da0df4b6c6cb060c02eab222505e0734d6353da02c9e2b5d982b",
+      "bytes": 46769,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/stacks/threejs.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/stacks/uno.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/stacks/uno.csv",
+      "sha256": "a0474363e4225b5367214d5675fd3e075f137026f9500f0d04357882ef4f6d48",
+      "bytes": 30091,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/stacks/uno.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/stacks/uwp.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/stacks/uwp.csv",
+      "sha256": "c409f08c1fbba1f1029f1acaa554e7b4471cc85517a5751c9f2e62465badcd5c",
+      "bytes": 24692,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/stacks/uwp.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/stacks/vue.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/stacks/vue.csv",
+      "sha256": "b655f1ebb9dff2652d15981f31b1784c8a6d4759efd2815a14f3088257569f95",
+      "bytes": 12813,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/stacks/vue.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/stacks/winui.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/stacks/winui.csv",
+      "sha256": "e676dc1c13ee6c205c40b0746f1335150a346c7a49a0616d2545bc3d2c930c85",
+      "bytes": 27890,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/stacks/winui.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/stacks/wpf.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/stacks/wpf.csv",
+      "sha256": "9781a9950b20333637b30a02e498b7efca21b618a3eeb8665836f3ac6e974da7",
+      "bytes": 24158,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/stacks/wpf.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/styles.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/styles.csv",
+      "sha256": "a93a4d9d7025856575d7b7583bda020be9043013432c5af7c58af9dbdfb206b7",
+      "bytes": 149478,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/styles.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/typography.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/typography.csv",
+      "sha256": "321fc446e89024488ebae96dda93efc4d2307bd8bddb240857ad51364f6782c8",
+      "bytes": 49997,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/typography.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/ui-reasoning.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/ui-reasoning.csv",
+      "sha256": "f0774dd741cecdad5eec842034bd6d5e9ea50e9f220a1910069748daa0bb8e9a",
+      "bytes": 77360,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/ui-reasoning.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/data/ux-guidelines.csv",
+      "local": "upstream/src/ui-ux-pro-max/data/ux-guidelines.csv",
+      "sha256": "ff81ec613f70ba9fc3fcce52dbe4ae35d44b2079dbe6dc066d2d6e38c28facd5",
+      "bytes": 27516,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/data/ux-guidelines.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/core.py",
+      "local": "upstream/src/ui-ux-pro-max/scripts/core.py",
+      "sha256": "c3be4b23e7150e6b45095213158cfa3c8ad96502f01dde3f6ffff9de64a4f481",
+      "bytes": 41236,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/core.py"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/design_system.py",
+      "local": "upstream/src/ui-ux-pro-max/scripts/design_system.py",
+      "sha256": "e7d1c94c4b2eada17c5551157668362659ccf9626d34dbd58e68142410f90103",
+      "bytes": 71537,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/design_system.py"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/reasoning_contract.py",
+      "local": "upstream/src/ui-ux-pro-max/scripts/reasoning_contract.py",
+      "sha256": "b8bac1af82aa280d3e06f00aabaeac4337e632996b07fed874e2b6ee6e9c5913",
+      "bytes": 5824,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/reasoning_contract.py"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/search.py",
+      "local": "upstream/src/ui-ux-pro-max/scripts/search.py",
+      "sha256": "d54e648fe0ec2932cac66684220cc17be4bd4b4eba1d23d3195d509d398db374",
+      "bytes": 9373,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/search.py"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-api.json",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-api.json",
+      "sha256": "22d8dc81a7d6827b7e8b64b53e7d184210fb9759e8e294e0d5133c81cc460176",
+      "bytes": 1079,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-api.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-catalog.json",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-catalog.json",
+      "sha256": "c608ad5c4084ebc50a4bbbfb69ea2456c01fd5519c457e18410fffd250ae948f",
+      "bytes": 1772,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-catalog.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-existing.csv",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-existing.csv",
+      "sha256": "4e0761b839dc6b2187a370e82eddc0aed8a7ff10c09e28dd814bb3656dac595b",
+      "bytes": 480,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-existing.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-metadata.json",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-metadata.json",
+      "sha256": "30bffc29ae348416a2de2f9c6c418e768e4578f136b0f4bac5d2f70124f2e9ba",
+      "bytes": 328,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-metadata.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-overrides.json",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-overrides.json",
+      "sha256": "6243a48a4619986768c4628e2d0c98ff195beba71ba9be5df8f0c52fc6d90c0b",
+      "bytes": 97,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-overrides.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/icons-curated.csv",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/icons-curated.csv",
+      "sha256": "68362c9a700c13b96f000784a0198c1c7e117a7088a01c85744e44233038fe9d",
+      "bytes": 495,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/icons-curated.csv"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/phosphor-core.json",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/phosphor-core.json",
+      "sha256": "ae4d0bb076240824e1b643c2270d1f8cc0952a69502ec1e622b7dedd85b930bb",
+      "bytes": 571,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/phosphor-core.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/phosphor-package.json",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/phosphor-package.json",
+      "sha256": "500588c757d6de03e3d7e69b27a8b8b1f88ccf6bb0333e4c1e9b0d6a4f112475",
+      "bytes": 370,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/phosphor-package.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/phosphor-react-exports.json",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/phosphor-react-exports.json",
+      "sha256": "d79f2ee0afdbc2f87776733e145df3538a16a25d7c2fba0056bb48295dad0ded",
+      "bytes": 87,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/phosphor-react-exports.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/phosphor-react-package.json",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/phosphor-react-package.json",
+      "sha256": "1c57a1d76bcc0cdd3632d4c18b9c0e79576b4591df39831c9607e5d0eb4f2cec",
+      "bytes": 81,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/fixtures/catalogs/phosphor-react-package.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/fixtures/relevance-baseline.json",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/fixtures/relevance-baseline.json",
+      "sha256": "0df200fc54c1cb97a52d6775e7f501509163cea8f8b73fd7268429bc1f835afe",
+      "bytes": 89426,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/fixtures/relevance-baseline.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/fixtures/relevance-cases.json",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/fixtures/relevance-cases.json",
+      "sha256": "e77d36eebbf6ddc2860946a02cdb659351da6c09f2688f1ed30939a418099646",
+      "bytes": 36734,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/fixtures/relevance-cases.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/fixtures/relevance-thresholds.json",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/fixtures/relevance-thresholds.json",
+      "sha256": "1fbe8623fe3e49c8d828139bca9df69043746e488e8bf09d93dfb9cbc31f5cef",
+      "bytes": 5079,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/fixtures/relevance-thresholds.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/test_catalog_refresh.py",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/test_catalog_refresh.py",
+      "sha256": "3e2ca5d12702318f641ae62d0c14f22a3bcc84d84e79b863c0e947d475604adb",
+      "bytes": 19466,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/test_catalog_refresh.py"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/test_catalog_summary_line_endings.py",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/test_catalog_summary_line_endings.py",
+      "sha256": "fa6ff09f0ec2c99013588c77397f5082dddebe8f467e94c5f8378ec9595f4989",
+      "bytes": 2947,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/test_catalog_summary_line_endings.py"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/test_core.py",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/test_core.py",
+      "sha256": "3527fe2f4b852f69f07c17ddc0d615d9a6e025c924e45a33985579a94a8d2118",
+      "bytes": 16680,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/test_core.py"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/test_core_data_quality.py",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/test_core_data_quality.py",
+      "sha256": "3ffc6b4905c9ea26d7ac4527ab154d153584231aee71b2ae4bd017977fa09cc5",
+      "bytes": 8954,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/test_core_data_quality.py"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/test_data_contracts.py",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/test_data_contracts.py",
+      "sha256": "0360d6e10080c0bca214f2b0bbad582ba50702a542ce21013351aca54938df3a",
+      "bytes": 19513,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/test_data_contracts.py"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/test_design_system_mode.py",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/test_design_system_mode.py",
+      "sha256": "95ad2c154349f7021f55a558f8dcdd71df1a24fcf531a4364a8e49526a0865ef",
+      "bytes": 9815,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/test_design_system_mode.py"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/test_design_system_stack.py",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/test_design_system_stack.py",
+      "sha256": "83d09ffe8cfbf7b265f362129f061dfe8e5e167ce5db43adaead197cabc9ca38",
+      "bytes": 2261,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/test_design_system_stack.py"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/test_native_desktop_stack_freshness.py",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/test_native_desktop_stack_freshness.py",
+      "sha256": "3942845712b9a829323cd3568511483135f2a8c7cd79ccf61679da4b0f624dbb",
+      "bytes": 8375,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/test_native_desktop_stack_freshness.py"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/test_relevance_evaluator.py",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/test_relevance_evaluator.py",
+      "sha256": "2fe56a4d6fe5fff15ff592274b0eeaba925146cefea6c0fa29d8f1b77c9aca1f",
+      "bytes": 8430,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/test_relevance_evaluator.py"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/test_skill_script_paths.py",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/test_skill_script_paths.py",
+      "sha256": "7cec24b94be771bc60bc84f8993e614bb16d4047930e1dd3d3bed91628311d44",
+      "bytes": 4305,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/test_skill_script_paths.py"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/test_style_taxonomy.py",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/test_style_taxonomy.py",
+      "sha256": "cd14d0092e8a454d213aa104b53e4e70ba698491fa00fde9fdec5ca8a3d70011",
+      "bytes": 7425,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/test_style_taxonomy.py"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/test_text_layout_resilience.py",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/test_text_layout_resilience.py",
+      "sha256": "b51d32ee8a15505b87cb81957fb2d1b385e041e8beb4463c311d236bfd29ebd4",
+      "bytes": 5874,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/test_text_layout_resilience.py"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/tests/test_web_stack_freshness.py",
+      "local": "upstream/src/ui-ux-pro-max/scripts/tests/test_web_stack_freshness.py",
+      "sha256": "74897571398585f27e2c35d09d81b0a531c8c774f4a2967e5e1b1d1b05a483d9",
+      "bytes": 7701,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/tests/test_web_stack_freshness.py"
+    },
+    {
+      "path": "src/ui-ux-pro-max/scripts/validate_data.py",
+      "local": "upstream/src/ui-ux-pro-max/scripts/validate_data.py",
+      "sha256": "a599aa256049cf30954d1f164721b99e453eb7e4cb8241bcab2d5573e6cf58b8",
+      "bytes": 52230,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/scripts/validate_data.py"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/base/quick-reference.md",
+      "local": "upstream/src/ui-ux-pro-max/templates/base/quick-reference.md",
+      "sha256": "0a6da6ef08190792fa2d55eaa44ddaac0c071ff2cf9a087d372924c2a99e942f",
+      "bytes": 27418,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/base/quick-reference.md"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/base/skill-content.md",
+      "local": "upstream/src/ui-ux-pro-max/templates/base/skill-content.md",
+      "sha256": "4956ab03fcf850fbd05ea658cb694cea767ff8e42aaf59ccf59fef0172271394",
+      "bytes": 27433,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/base/skill-content.md"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/platforms/agent.json",
+      "local": "upstream/src/ui-ux-pro-max/templates/platforms/agent.json",
+      "sha256": "d71d8ae39564e822d81c33ef33f1d34159e34761dd8a6e91648aef38397b7c7d",
+      "bytes": 1475,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/platforms/agent.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/platforms/amazonq.json",
+      "local": "upstream/src/ui-ux-pro-max/templates/platforms/amazonq.json",
+      "sha256": "ee5458048418c6e08a19aeebbb5d140b7989db8a6f860c3d016f7518915e8b1d",
+      "bytes": 949,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/platforms/amazonq.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/platforms/augment.json",
+      "local": "upstream/src/ui-ux-pro-max/templates/platforms/augment.json",
+      "sha256": "77c7f25eba8494ebf6fc82dfa31cdd467b0b0434ae18e27f56c2b4fa67bc4351",
+      "bytes": 905,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/platforms/augment.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/platforms/claude.json",
+      "local": "upstream/src/ui-ux-pro-max/templates/platforms/claude.json",
+      "sha256": "c110561938c664aa6fa2c6fbaf741e672979e1a5e763992ad23cc9505a4d56f9",
+      "bytes": 1475,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/platforms/claude.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/platforms/codebuddy.json",
+      "local": "upstream/src/ui-ux-pro-max/templates/platforms/codebuddy.json",
+      "sha256": "937001e2bb35744553c9880fd9d551ce451facfdc2bcc1df2a7ee637b4d79a2c",
+      "bytes": 1458,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/platforms/codebuddy.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/platforms/codewhale.json",
+      "local": "upstream/src/ui-ux-pro-max/templates/platforms/codewhale.json",
+      "sha256": "24f6777a8e3e0ec71c90ed7743e91ad0192e9100a99d8eb63c830196f236af39",
+      "bytes": 1458,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/platforms/codewhale.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/platforms/codex.json",
+      "local": "upstream/src/ui-ux-pro-max/templates/platforms/codex.json",
+      "sha256": "97ca4be26361548521c2ce4f72a7daea335903b7ccb4e64240e9d18b18e9751c",
+      "bytes": 1446,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/platforms/codex.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/platforms/continue.json",
+      "local": "upstream/src/ui-ux-pro-max/templates/platforms/continue.json",
+      "sha256": "0fcedd157f854b6d1f5642f38c0b6bd702769edd30d59f2b5340de8b23945629",
+      "bytes": 1455,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/platforms/continue.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/platforms/copilot.json",
+      "local": "upstream/src/ui-ux-pro-max/templates/platforms/copilot.json",
+      "sha256": "aa71708a896fc6e362897a9d64fda930b9740193199b15d7139d19dba653f1f8",
+      "bytes": 1497,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/platforms/copilot.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/platforms/cursor.json",
+      "local": "upstream/src/ui-ux-pro-max/templates/platforms/cursor.json",
+      "sha256": "8f783ad4354f0ca1ce4056427bcb15e7562e16e636d5718c04d2da2e113268f4",
+      "bytes": 1449,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/platforms/cursor.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/platforms/droid.json",
+      "local": "upstream/src/ui-ux-pro-max/templates/platforms/droid.json",
+      "sha256": "58d1486592188359d9adcac2efbb7f35efe28ffc1e9081272e76a1b8b5958758",
+      "bytes": 1480,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/platforms/droid.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/platforms/gemini.json",
+      "local": "upstream/src/ui-ux-pro-max/templates/platforms/gemini.json",
+      "sha256": "b41c822671d2125c7e88348cac41ecafa1feb974234c1cf2175d433728836ddd",
+      "bytes": 1453,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/platforms/gemini.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/platforms/kilocode.json",
+      "local": "upstream/src/ui-ux-pro-max/templates/platforms/kilocode.json",
+      "sha256": "aabae12888c874c81ce0b6c360df0d4bcf8e22f059fbac22a59a6767efdafbb0",
+      "bytes": 1455,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/platforms/kilocode.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/platforms/kiro.json",
+      "local": "upstream/src/ui-ux-pro-max/templates/platforms/kiro.json",
+      "sha256": "cc358cadf0da87e0b476ef376cec404e6e7634bd4af77d651c06eaac5a2e2115",
+      "bytes": 1450,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/platforms/kiro.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/platforms/openclaw.json",
+      "local": "upstream/src/ui-ux-pro-max/templates/platforms/openclaw.json",
+      "sha256": "d7ecd0e30f1c84ba0482a52a48d43ab5365337d081792c500aa7665da2830d96",
+      "bytes": 1453,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/platforms/openclaw.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/platforms/opencode.json",
+      "local": "upstream/src/ui-ux-pro-max/templates/platforms/opencode.json",
+      "sha256": "21bdfb4ad8a4d6463bec360a875daf9b02cfb58054fdd2e1dbe240c408495e47",
+      "bytes": 1455,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/platforms/opencode.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/platforms/qoder.json",
+      "local": "upstream/src/ui-ux-pro-max/templates/platforms/qoder.json",
+      "sha256": "a1e179f95ba9693488cfd76ae8dfdcf380f85b6257859204c527fd1aabab995d",
+      "bytes": 1446,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/platforms/qoder.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/platforms/roocode.json",
+      "local": "upstream/src/ui-ux-pro-max/templates/platforms/roocode.json",
+      "sha256": "715c6cc4c7b761676be2d21744887ff19020ae5fde85eff0ca31250e319ad937",
+      "bytes": 1452,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/platforms/roocode.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/platforms/trae.json",
+      "local": "upstream/src/ui-ux-pro-max/templates/platforms/trae.json",
+      "sha256": "430643d17c82f6e3f39da7276df8f0493756b32c65c9e5ad2dfd7ce8a20a9ba9",
+      "bytes": 1443,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/platforms/trae.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/platforms/universal.json",
+      "local": "upstream/src/ui-ux-pro-max/templates/platforms/universal.json",
+      "sha256": "2436c0b1191fa1a9a25f1f5c052d84f8102459634aa9a29da51a55890616d64f",
+      "bytes": 1472,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/platforms/universal.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/platforms/warp.json",
+      "local": "upstream/src/ui-ux-pro-max/templates/platforms/warp.json",
+      "sha256": "ee6e2f0d4707875519b5b11178a79761f52e47817c288d7a0130a473e1d1794e",
+      "bytes": 896,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/platforms/warp.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/platforms/windsurf.json",
+      "local": "upstream/src/ui-ux-pro-max/templates/platforms/windsurf.json",
+      "sha256": "73d8f6efc134653793fcf051230befb51a215090be017856e6b4f8aecb1bf8fd",
+      "bytes": 1455,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/platforms/windsurf.json"
+    },
+    {
+      "path": "src/ui-ux-pro-max/templates/platforms/zcode.json",
+      "local": "upstream/src/ui-ux-pro-max/templates/platforms/zcode.json",
+      "sha256": "8899e8a4ac6c736d6e187929e326e9e39a73a75411f27549cd675e99006d0daf",
+      "bytes": 1446,
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7246805992a42b7bba37d4cac83b01416f0c6c44/src/ui-ux-pro-max/templates/platforms/zcode.json"
+    }
+  ]
+}

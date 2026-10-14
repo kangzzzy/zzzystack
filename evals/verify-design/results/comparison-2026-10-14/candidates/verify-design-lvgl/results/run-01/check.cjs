@@ -1,0 +1,11 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const text=fs.readFileSync(__dirname+'/prototype.html','utf8');const ctx={};vm.createContext(ctx);vm.runInContext(text.match(/<script>([\s\S]*?)<\/script>/)[1],ctx);
+let count=0;function test(name,fn){fn();console.log('PASS '+name);count++}
+function transfer(){let c=ctx.createCell();assert(c.act('start'));assert(c.act('done'));assert(c.act('dispatch'));return c}
+test('normal sequence and ACK is not DONE',()=>{let c=ctx.createCell();assert(c.act('start'));assert(c.act('ack'));assert.equal(c.s.phase,'D1');assert.equal(c.s.cmd.status,'ACK');assert(c.act('done'));assert(c.act('dispatch'));assert(c.s.lock);assert(c.act('done'));assert(c.act('dispatch'));assert(c.act('done'));assert.equal(c.s.phase,'COMPLETE')});
+test('transfer loss holds lock and reconnect cannot resume',()=>{let c=transfer(),id=c.s.cmd.command_id;c.act('loss');assert(c.s.lock);assert(!c.act('dispatch'));c.act('reconnect');assert(c.s.unknown);assert(!c.s.d.R1.fresh);assert(!c.act('dispatch'));assert.equal(c.s.cmd.command_id,id)});
+test('role restricted recovery after snapshot and field confirmation',()=>{let c=transfer();c.act('loss');c.act('reconnect');assert(!c.act('recover'));assert(c.act('check'));assert(!c.act('recover'));c.s.role='maintenance';assert(c.act('recover'));assert.equal(c.s.phase,'D2_READY');assert(!c.s.lock);assert.equal(c.s.cmd.status,'DONE');assert(c.act('dispatch'))});
+test('ACK timeout no resend and alarm clearing no recovery',()=>{let c=transfer(),id=c.s.cmd.command_id;c.act('timeout');c.act('clear');assert(c.s.unknown);assert(c.s.lock);assert(!c.act('dispatch'));assert.equal(c.s.cmd.command_id,id)});
+test('service rejects unsafe door stale and pause',()=>{for(const condition of ['safety','door','pause','stale']){let c=ctx.createCell();if(condition==='stale')c.s.d.D1.fresh=false;else c.act(condition);assert(!c.act('start'))}});
+test('transfer preconditions and duplicate dispatch rejected',()=>{let c=ctx.createCell();c.act('start');c.act('done');c.s.d.D2.part=true;assert(!c.act('dispatch'));c.s.d.D2.part=false;assert(c.act('dispatch'));let id=c.s.cmd.command_id;assert(!c.act('dispatch'));assert.equal(c.s.cmd.command_id,id)});
+console.log('TOTAL '+count+' passed; pure JS model only; no browser, LVGL, network, or hardware execution');
